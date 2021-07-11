@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Fonts
+$primary-font: Helvetica, 'Open Sans', sans-serif;
+$secondary-font: $primary-font;
+
+/// Font-size
+$body-font-size: 16px;
+$buttons-font-size: 18px;
+
+/// Copy text
+/// @type Color
+$text-color: #222222 !default;
+
+/// Default colors
+$white: #fff;
+$black: #000;
+$grey: #ccc;
+$wrongurl-color: #eee;
+
+// Company color pallete
+$primary-color: #3d557d;  //azul
+$secondary-color: #ee1d25;  //rojo
+$third-color: $secondary-color;
+$fourth-color: #464646;
+$fifth-color: #2e2e2e;
+
+
+
+// Button and hover color
+$btn-color: $third-color;
+$hover-color: $primary-color;
+$internals-links: $hover-color;
+
+$facets-color: $primary-color;
+$facets-title: $primary-color;
+$internals-titles: $primary-color;
+
+$body-color: $white;
+
+/// For search box (labels inline with the inputs)
+$label-inline: false; /// <- true or false (default false)
+
+/// For search small (similar as the mobile search)
+$search-small: true; /// <- true or false (default false)
+
+
+/// Hide location dropdown
+$hide-dropdown: true; /// <- true or false (default false)
+
+/// Hide cookies bar
+$hide-cookies-bar: true; /// <- true or false (default false)
+
+// Multi-brand is enable
+$multi-brand: true; /// <- true or false (default false)
+
+
+/// For rounded facets
+$rounded-facet: true; /// <- true or false (default false)
+
+/// For full facets
+$full-facet: false; /// <- true or false (default false)
+
+
+$base-url: '/assets/' !default;

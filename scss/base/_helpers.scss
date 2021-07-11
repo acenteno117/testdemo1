@@ -1,0 +1,143 @@
+/// -----------------------------------------------------------------------------
+/// This file contains CSS helper classes.
+/// -----------------------------------------------------------------------------
+
+/// Clear inner floats
+.clearfix::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/// Custom-helpers
+.text-white{
+  color: $white;
+}
+
+.full-wd{
+  width: 100%;
+}
+
+.no-margin{
+  margin: 0px;
+}
+
+.no-padding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/// Visible only on Full HD
+.visible-full-hd{
+  display: none !important;
+}
+
+/// Featured pages Jobs section
+.featured-jobs{
+  padding-bottom: 50px;
+}
+
+/// No break words
+.no-break{
+  white-space: nowrap;
+}
+
+/// Hide "Not Ready To Apply" section on the Join Form page and After Apply page
+.hide-not-ready + .not-ready,
+.hide-not-ready + style + .not-ready,
+.hide-not-ready + footer > .not-ready,
+.hide-not-ready + style + footer > .not-ready{
+  display: none;
+}
+
+/// Center images
+img{
+  margin: 0 auto;
+}
+
+/// Videos Full Width
+video{
+  width: 100%;
+  display: block;
+}
+
+.aligned-text{
+  text-align: center;
+}
+
+ul.aligned-list{
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+:lang(en-US) body{
+  .hidden-en{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /// Featured pages Jobs section
+  .featured-jobs{
+    padding-bottom: 100px;
+  }
+
+  .aligned-text{
+    text-align: left;
+  }
+
+  ul.aligned-list{
+    padding-left: 40px;
+    list-style: disc;
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 1920px) {
+
+  /// Hide on Full HD
+  .hidden-full-hd{
+    background: none !important;
+    height: auto !important;
+  }
+
+  /// Visible only on Full HD
+  .visible-full-hd{
+    display: block !important;
+  }
+
+}
+
+/// Infinite animation from left to right
+@-webkit-keyframes animationRight{
+  from{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50%{
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  to{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes animationRight{
+  from{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50%{
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  to{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,467 @@
+/// -----------------------------------------------------------------------------
+/// This file contains styles that are specific to the job details page (JDP).
+/// -----------------------------------------------------------------------------
+
+/// Fixing job details containers bug
+#job-details-page .container .container{
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/// End Fixing job details containers bug
+
+
+/// APPLY SECTIONS
+
+/// Apply buttons
+#jdp-apply-button-top, #jdp-apply-button-bottom, #jdp-apply-button-top-mobile, #jdp-apply-button-bottom-mobile{
+  @extend .internals-buttons;
+
+  max-width: 187px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  // border-radius: 20px;
+  // padding: 11px 15px;
+  text-transform: uppercase;
+
+  @include on-event {
+    // background-color: $primary-color;
+    // border-radius: none;
+    // border: none;
+  }
+}
+/// End Apply buttons
+
+/// Not ready to apply link
+#jdp-not-ready-to-apply-link-top,
+#jdp-not-ready-to-apply-link-bottom{
+  color: $hover-color;
+  font-weight: normal;
+
+  margin-top: 0px;
+  text-align: center;
+  text-transform: capitalize; /// <- Always
+}
+/// End Not ready to apply link
+
+/// END APPLY SECTIONS
+
+
+/// JOB TITLE, DATE POSTED AND APPLY TOP BUTTON CONTAINER
+.jdp-title-inner-container{
+  display: table;
+  width: 100%;
+  padding: 15px;
+  margin-top: 0px;
+  background-color: transparent;
+
+  /// Job title, date posted and apply top button section
+  .jdp-title-block-position{
+    /// Job title
+    .jdp-job-title{
+      @extend .internals-titles;
+
+      text-align: center;
+      padding-bottom: 0px;
+      // text-transform: capitalize;
+
+      .jdp-title-job-title{
+      }
+
+      .jdp-title-job-in{
+        // text-transform: lowercase; /// <- Standard
+      }
+
+      .jdp-title-job-location{
+      }
+
+      .jdp-title-job-at{
+        // text-transform: lowercase; /// <- Standard
+
+        /// Break in another line
+
+        // &:before{
+        //   content: "\A";
+        //   white-space: pre;
+        // }
+
+        /// End Break in another line
+      }
+
+      .jdp-title-job-company{
+      }
+    }
+    /// End Job title
+
+    /// Date posted
+    #jdp-title-date-posted{
+      color: $text-color;
+      text-align: center;
+      padding-top: 10px;
+
+      strong{
+        // font-weight: normal;
+      }
+    }
+    /// End Date posted
+  }
+  /// End Job title, date posted and apply top button section
+}
+/// END JOB TITLE, DATE POSTED AND APPLY TOP BUTTON CONTAINER
+
+/// JOB DETAILS CONTENT
+.job-details-content{
+  border-top: 3px solid $hover-color;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  padding-top: 0px;
+  background-color: transparent;
+
+  /// Job description, job requirements, job snapshot & about us title
+  .content-card-header{
+    color: $primary-color;
+
+    text-align: center;
+    font-size: 30px; /// <- Always
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+  }
+  /// End Job description, job requirements, job snapshot & about us title
+
+  /// Snapshot section
+  #jdp-job-snapshot-section{
+    // background-color: transparent;
+  }
+  /// End Snapshot section
+
+  /// Social share
+  #jdp-social-sharing-section{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 3px solid $hover-color;
+  }
+  /// End Social share
+
+  /// Job snapshot container
+  .jdp-job-snapshot-card{
+    padding: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    /// Snapshot header
+    .content-card-header{
+      margin: 0px 20px;
+      padding: 20px 5px 8px;
+
+      // border-top-left-radius: 3px;
+      // border-top-right-radius: 3px;
+      // border-bottom: 2px solid $hover-color;
+    }
+    /// End Snapshot header
+
+    /// Snapshot list
+    .snapshot-padding{
+      line-height: 1.3;
+      padding: 8px 20px 20px;
+
+      /// List item
+      li{
+        padding-bottom: 5px;
+
+        &.job-location{
+          padding-bottom: 15px; /// <- Fixing space issue caused by enabling street address
+        }
+
+        /// Item icon
+        .snapshot-icon.secondary-text-color{
+          color: $primary-color;
+
+          font-size: 24px;
+          padding-top: 6px;
+          padding-right: 10px;
+
+          // display: table-cell;
+
+          /// Job type
+          &.glyphicon-triangle-top{
+            padding-top: 0px;
+          }
+
+          /// Experience
+          &.fa-briefcase{
+            padding-top: 7px;
+          }
+
+          /// Date posted
+          &.fa-clock-o, &.fa-info-circle{
+            padding-top: 5px;
+          }
+        }
+        /// End Item icon
+
+        /// Item title
+        .snapshot-text{
+          color: $fourth-color;
+
+          strong{
+            // font-weight: normal;
+          }
+        }
+        /// End Item title
+
+        /// Item information
+        .secondary-text-color{
+          color: #464646;
+          font-weight: normal;
+        }
+        /// End Item information
+
+        /// Item link
+        .job-snapshot-link{
+          color: $hover-color;
+          font-weight: normal;
+
+          @include on-event{
+            color: tint($hover-color, 30%);
+          }
+        }
+        /// End Item link
+      }
+      /// End List item
+    }
+    /// End Snapshot list
+  }
+  /// End Job snapshot container
+
+  /// About us section
+  .jdp-about-us-card{
+    border-top: 3px solid $hover-color;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: transparent;
+  }
+  /// End About us section
+
+  /// Job description section
+  #jdp-job-description-section{
+    border-top: 3px solid $hover-color;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-top: 0px;
+
+    /// Description content
+    .jdp-job-description-card{
+      padding-top: 0px;
+      margin-bottom: 0px;
+
+      &, p, li{
+        color: $text-color;
+      }
+
+      a{
+        color: $hover-color;
+
+        @include on-event{
+          color: $hover-color;
+          text-decoration: underline;
+        }
+      }
+    }
+    /// End Description content
+  }
+  /// End Job description section
+
+  /// Job requirements section
+  #jdp-job-requirements-section{
+    // border-top: 3px solid $hover-color;
+    // border-top-left-radius: 3px;
+    // border-top-right-radius: 3px;
+
+    /// Requirements content
+    .jdp-job-requirements-card{
+      &, p, li{
+        color: $text-color;
+      }
+
+      a{
+        color: $hover-color;
+
+        @include on-event{
+          color: $hover-color;
+          text-decoration: underline;
+        }
+      }
+    }
+    /// End Requirements content
+  }
+  /// End Job requirements section
+
+  /// Company logo & apply bottom section
+  #jdp-bottom-apply-section{
+    border-top: 3px solid $hover-color;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-top: 10px;
+
+    /// Bottom apply card
+    .jdp-bottom-apply-card{
+      padding-bottom: 5px;
+    }
+    /// End Bottom apply card
+
+    /// Bottom apply button container
+    #jdp-bottom-apply-button-col{
+      padding-top: 20px;
+
+      #jdp-not-ready-to-apply-link-bottom{
+      }
+    }
+    /// End Bottom apply button container
+  }
+  /// Company logo & apply bottom section
+
+  /// Check out our similar jobs content
+  #jdp-similar-jobs-row{
+    padding: 10px 0px;
+    margin: 0px;
+
+    /// Check out our similar jobs title
+    h3{
+      color: $primary-color;
+      text-align: center;
+      font-size: 30px; /// <- Always
+      font-weight: bold;
+      text-transform: uppercase; /// <- Always
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+
+      b, strong{
+        // font-weight: normal;
+      }
+    }
+    /// End Check out our similar jobs title
+
+    /// Similar jobs list
+    .similar-jobs{
+      text-align: center;
+
+      li{
+        /// Similar jobs title
+        .similar-jobs-tag{
+          color: #464646;
+        }
+        /// End Similar job title
+      }
+
+      /// Divider
+      >li+li:before{
+        padding: 0px;
+        content: "";
+        color: $hover-color;
+      }
+      /// Divider
+    }
+    /// End Similar jobs list
+  }
+  /// End Check out our similar jobs content
+}
+/// END JOB DETAILS CONTENT
+
+
+@media (min-width: 768px) {
+
+  /// JOB TITLE, DATE POSTED AND APPLY TOP BUTTON CONTAINER
+  .jdp-title-inner-container{
+    margin-top: 0px;
+
+    /// Job title, date posted and apply top button section
+    .jdp-title-block-position{
+      /// Job title
+      .jdp-job-title{
+        text-align: left;
+      }
+      /// End Job title
+
+      /// Date posted
+      #jdp-title-date-posted{
+        text-align: left;
+      }
+      /// End Date posted
+    }
+    /// Job title, date posted and apply top button section
+
+    /// Apply button and not ready to apply text container
+    .jdp-top-apply-block-position{
+      width: 25%;
+      padding-top: 0px;
+      vertical-align: middle;
+    }
+    /// End Apply button and not ready to apply text container
+  }
+  /// END JOB TITLE, DATE POSTED AND APPLY TOP BUTTON CONTAINER
+
+
+  /// JOB DETAILS CONTENT
+  .job-details-content{
+    /// Job description, job requirements, job snapshot & about us title
+    .content-card-header{
+      text-align: left;
+    }
+    /// End Job description, job requirements, job snapshot & about us title
+
+    /// Company logo & apply bottom section
+    #jdp-bottom-apply-section{
+      /// Company logo container
+      #jdp-bottom-apply-company-logo-col{
+        .multi-brand-image{
+          text-align: left;
+        }
+      }
+      /// End Company logo container
+
+      /// Bottom apply button container
+      #jdp-bottom-apply-button-col{
+        padding-top: 0px;
+      }
+      /// End Bottom apply button container
+    }
+    /// End Company logo & apply bottom section
+
+    /// Check out our similar jobs content
+    #jdp-similar-jobs-row{
+      /// Check out our similar jobs title
+      h3{
+        text-align: left;
+      }
+      /// End Check out our similar jobs title
+
+      /// Similar jobs list
+      .similar-jobs{
+        text-align: left;
+
+        /// Divider
+        >li+li:before{
+          padding: 0 0.55em;
+          content: "|";
+        }
+        /// End Divider
+      }
+      /// End Similar jobs list
+    }
+    /// End Check out our similar jobs content
+  }
+  /// END JOB DETAILS CONTENT
+
+}
+
+@media (min-width: 992px) {
+
+  /// JOB DETAILS CONTENT
+  .job-details-content{
+    border: none;
+  }
+  /// END JOB DETAILS CONTENT
+
+}

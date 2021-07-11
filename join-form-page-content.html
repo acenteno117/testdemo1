@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at [Company]</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_join.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <!-- Internals section -->
+  <section class="internals-section">
+    <!-- Join Form Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <!-- Join form -->
+
+          <div id="join-entire-page-content">
+            <div id="join-page-header" class="row animate-show">
+              <div ng-class="vm.joinFormTitleClass">
+                <h1 class="join-form-header text-weight-bolder text-uppercase text-center primary-text-color">Join Our Talent Network</h1>
+              </div>
+            </div>
+
+            <div id="join-page-body" class="row animate-show">
+              <div id="join-page-content-section" ng-class="vm.tnBlurbClass" class="col-md-5 col-sm-12">
+                <strong>Why Join Our Talent Network? </strong><br><br><p style="text-align: left; line-height: 20px;">Joining our Talent Network will enhance your job search and application process.&nbsp;Whether you choose to apply or just leave your information, we look forward to staying connected with you. <br></p><ul style="line-height: 20px;"><li>Receive alerts with new job opportunities that match your interests</li><li>Receive relevant communications and updates from our organization</li><li>Share job opportunities with family and friends through Social Media or email</li></ul><strong>Join our Talent Network today!</strong><br><br><a href="/en-US/privacy-policy" style="text-align: center; font-size:11px;">Privacy Policy</a><br><a href="/en-US/terms-and-conditions" style="text-align: center; font-size:11px;">Terms and Conditions</a>
+              </div>
+
+              <div id="join-form-body" ng-class="vm.formBodyClass" class="col-md-7 col-sm-12">
+                <form name="joinForm" ng-submit="vm.onSubmit(joinForm)" class="animate-show ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength ng-invalid-email ng-valid-resume-upload" novalidate="" >
+
+                  <p class="text-info small"><span class="text-danger">*</span> Required</p>
+
+                  <ng-form class="formly ng-pristine ng-isolate-scope ng-invalid ng-invalid-required ng-valid-maxlength ng-invalid-email ng-valid-resume-upload" name="formly_1" role="form" model="vm.model" fields="vm.formFields" options="vm.options" >
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-input" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index" >
+                      <div class="form-group ng-scope has-error" ng-class="{'has-error': showError}" >
+                        <div>
+                          <label for="formly_1_input_jf_email_address_0" class="control-label ">
+                            Email Address
+                            *
+                          </label>
+                          <input class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength ng-invalid-email ng-touched" ng-model="model[options.key]" id="formly_1_input_jf_email_address_0" name="formly_1_input_jf_email_address_0" formly-custom-validation="" ng-maxlength="128" required="true" type="email" option-display-type="EmailAddress" >
+                          <div my-messages="options" class="ng-isolate-scope">
+                            <div class="my-messages ng-scope ng-active" id="Email-Address-error-message" ng-messages="options.formControl.$error" ng-if="options.formControl.$touched || options.validation.show" ></div>
+
+                            <div id="field-required-error" class="some-message ng-scope" ng-message="required">This field is required</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-select" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index" >
+                      <div class="form-group ng-scope" ng-class="{'has-error': showError}">
+                        <div>
+                          <label for="formly_1_select_jf_country_code_1" class="control-label ">
+                            Country
+                            *
+                          </label>
+
+                          <select class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" ng-model="model[options.key]" id="formly_1_select_jf_country_code_1" name="formly_1_select_jf_country_code_1" formly-custom-validation="" required="true" option-display-type="Geography" ng-options="option[to.valueProp || 'value'] as option[to.labelProp || 'name'] group by option[to.groupProp || 'group'] for option in to.options">
+                            <option label="Nicaragua" value="string:ni" selected="selected">Nicaragua</option>
+                            <option label="Niger" value="string:ne">Niger</option>
+                            <option label="Nigeria" value="string:ng">Nigeria</option>
+                          </select>
+
+                          <div my-messages="options" class="ng-isolate-scope">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-input" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index">
+                      <div class="form-group ng-scope" ng-class="{'has-error': showError}">
+                        <div>
+                          <label for="formly_1_input_jf_location_free_text_2" class="control-label ">
+                            Location
+                            *
+                          </label>
+
+                          <input class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-model="model[options.key]" id="formly_1_input_jf_location_free_text_2" name="formly_1_input_jf_location_free_text_2" formly-custom-validation="" required="true" placeholder="City, State or Zip" type="text" option-display-type="Geography"><div my-messages="options" class="ng-isolate-scope">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-input" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index">
+                      <div class="form-group ng-scope" ng-class="{'has-error': showError}">
+                        <div>
+                          <label for="formly_1_input_jf_desired_job_title_3" class="control-label ">
+                            Desired Job Title
+                            *
+                          </label>
+
+                          <input class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength" ng-model="model[options.key]" id="formly_1_input_jf_desired_job_title_3" name="formly_1_input_jf_desired_job_title_3" formly-custom-validation="" ng-maxlength="128" required="true" type="text" option-display-type="DesiredJobTitle"><div my-messages="options" class="ng-isolate-scope">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-input" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index">
+                      <div class="form-group ng-scope" ng-class="{'has-error': showError}">
+                        <div>
+                          <label for="formly_1_input_jf_first_name_4" class="control-label ">
+                            First Name
+                          </label>
+
+                          <input class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength" ng-model="model[options.key]" id="formly_1_input_jf_first_name_4" name="formly_1_input_jf_first_name_4" formly-custom-validation="" ng-maxlength="128" type="text" option-display-type="FirstName"><div my-messages="options" class="ng-isolate-scope">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-input" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index">
+                      <div class="form-group ng-scope" ng-class="{'has-error': showError}">
+                        <div>
+                          <label for="formly_1_input_jf_last_name_5" class="control-label ">
+                            Last Name
+                          </label>
+
+                          <input class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength" ng-model="model[options.key]" id="formly_1_input_jf_last_name_5" name="formly_1_input_jf_last_name_5" formly-custom-validation="" ng-maxlength="128" type="text" option-display-type="LastName"><div my-messages="options" class="ng-isolate-scope">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-fileUpload" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index" >
+                      <div class="form-group ng-scope" ng-class="{'has-error': showError}">
+                        <div>
+                          <label for="formly_1_fileUpload_MxDOTalentNetworkMemberInfo_ResumeWordDoc_FileName_6" class="control-label ">
+                            Upload A Resume
+                          </label>
+
+                          <div id="desktop-file-upload-container" ng-hide="$parent.$parent.$parent.$parent.vm.hideFileUpload" class="">
+                            <input type="file" ngf-select="" ngf-multiple="false" ng-hide="true" onchange="fileInputChange('add');" ngf-change="model.resumeUploaded($files)" ng-model="model['resumeFile']" name="MxDOTalentNetworkMemberInfo_ResumeWordDoc_FileName" id="MxDOTalentNetworkMemberInfo_ResumeWordDoc_FileName" class="form-control desktop-file-input-box hidden-xs ng-pristine ng-untouched ng-valid ng-valid-resume-upload ng-hide" formly-custom-validation="">
+                            <input type="button" id="browse" value="Choose file" onclick="handleBrowseClick();" class="form-control desktop-file-input-box hidden-xs">
+
+                            <a id="desktop-upload-remove-file-btn" class="form-control desktop-file-upload-bars hidden" onclick="fileInputChange('remove');" ng-click="$parent.$parent.$parent.$parent.vm.removeFile()"> X </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="dropbox-container" ng-hide="$parent.$parent.$parent.$parent.vm.hideDropbox" class="ng-scope">
+                        <a href="#" ng-click="model.dropboxChoose()" id="dropbox-btn" class="file-not-uploaded-width dropbox-dropin-btn dropbox-dropin-default">
+                          <span class="dropin-btn-status"></span> Choose from Dropbox
+                        </a>
+                        <a id="drop-box-remove-file-btn" class="remove-file-btn dropbox-dropin-btn dropbox-dropin-default hidden" ng-click="$parent.$parent.$parent.$parent.vm.removeFile()"> X </a>
+                      </div>
+
+                      <div my-messages="options" class="ng-isolate-scope ng-scope">
+                      </div>
+
+                      <br class="ng-scope">
+                    </div>
+
+                    <div formly-field="" class="formly-field ng-scope ng-isolate-scope formly-field-input" options="field" model="field.model || model" original-model="model" fields="fields" form="theFormlyForm" form-id="formly_1" form-state="options.formState" form-options="options" index="$index">
+                      <div class="form-group ng-scope" ng-class="{'has-error': showError}">
+                        <div>
+                          <input class="form-control ng-pristine ng-untouched ng-valid" ng-model="model[options.key]" id="formly_1_input_CSRFTime_8" name="formly_1_input_CSRFTime_8" formly-custom-validation="" type="hidden" autocomplete="off">
+                          <div my-messages="options" class="ng-isolate-scope">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div ng-transclude="" class="">
+                      <br class="ng-scope">
+                      <div id="join-apply-block" class="hidden-xs join-button-footer-container ng-scope">
+                        <div class="text-right join-is-not-apply">
+                          By joining our Talent Network you have not officially applied to a position.
+                        </div>
+
+                        <div class="text-right join-button-container">
+                          <input id="join-button" class="btn primary-button join-button text-weight-bold text-uppercase" type="submit" value="Join" ng-disabled="vm.isSubmitting" ng-hide="vm.isSubmitting">
+
+                          <span class="btn primary-button text-weight-bold ng-hide" ng-show="vm.isSubmitting">
+                            <i class="fa fa-spinner fa-spin"></i>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div id="join-apply-block-mobile" class="hidden-sm hidden-md hidden-lg ng-scope">
+                        <br>
+
+                        <div class="text-right">
+                          <input id="join-button-mobile" class="btn primary-button join-button-mobile text-weight-bold text-uppercase" type="submit" value="Join" ng-disabled="vm.isSubmitting" ng-hide="vm.isSubmitting">
+                          <span class="btn primary-button text-weight-bold ng-hide" ng-show="vm.isSubmitting">
+                            <i class="fa fa-spinner fa-spin"></i>
+                          </span>
+                        </div>
+
+                        <div class="text-right join-is-not-apply-mobile">
+                          By joining our Talent Network you have not officially applied to a position.
+                        </div>
+                        <br>
+                      </div>
+                    </div>
+                  </ng-form>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- End Join form -->
+        </div>
+      </div>
+    </div>
+    <!-- End Join Form Page Content -->
+  </section>
+  <!-- End Internals section -->
+
+  <style>
+  input[type=date]{
+    color: #555 !important;
+  }
+  </style>
+
+  <!-- Footer -->
+  <footer>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Replace CMS media flag -->
+  <script src="js/replaceMedia.js" charset="utf-8"></script>
+  <!-- End Replace CMS media flag -->
+</body>
+</html>

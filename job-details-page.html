@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at CoWorx</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+
+<body id="premium-body" class="">
+
+  <div id="job-details-page" ng-controller="DetailsController">
+
+    <!-- Header -->
+    <header id="back-top" class="home-header">
+      <!-- Top social -->
+
+      <!-- End Top social -->
+
+      <!-- Top navbar -->
+      <section class="top-navbar">
+
+
+        <!-- Navbar default -->
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="background-menu">
+
+          </div>
+          <!-- Container -->
+          <div class="container flex-container">
+
+            <!-- Navbar mobile -->
+            <div class="navbar-header">
+              <!-- Navbar toggle (hamburger) -->
+              <button type="button" class="hamburger navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <!-- End Navbar toggle (hamburger) -->
+
+              <!-- Mobile search button -->
+              <button type="button" class="navbar-toggle search-toggle-button-mobile collapsed" data-toggle="collapse" data-target="#SearchBoxMobile" aria-expanded="false" title="Search">
+                <span class="sr-only">Toggle search</span>
+                <i class="fa fa-search"></i>
+              </button>
+              <!-- End Mobile search button -->
+
+              <!-- Logo mobile -->
+              <a href="^site_language^/" class="navbar-brand visible-xs" title="CoWorx Careers" alt="CoWorx Careers">
+                <img src="^media_src_logo-mobile.png^" alt="CoWorx Careers">
+              </a>
+              <!-- End Logo mobile -->
+
+              <!-- Logo desktop -->
+              <a href="^site_language^/" class="navbar-brand hidden-xs" title="CoWorx Careers" alt="CoWorx Careers">
+                <img src="^media_src_logo.png^" alt="CoWorx Careers">
+              </a>
+              <!-- End Logo desktop -->
+            </div>
+            <!-- End Navbar mobile -->
+
+            <!-- Navbar collapse -->
+            <div class="collapse navbar-collapse" id="navbar">
+              <!-- Navbar nav -->
+              <ul class="nav navbar-nav">
+                <!-- Navigation -->
+                <!-- ^navigation^ -->
+                <li class="active">
+                  <a href="/" target="">
+                    Home
+                  </a>
+                </li>
+                <li class="">
+                  <a href="/search" target="">
+                    All Jobs
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="/join" target="">
+                    Join Our Talent Network
+                  </a>
+                </li>
+                <!-- End Navigation -->
+
+              </ul>
+              <!-- End Navbar nav -->
+            </div>
+            <!-- End Navbar collapse -->
+          </div>
+          <!-- Container -->
+        </nav>
+        <!-- End Navbar default -->
+      </section>
+      <!-- End Top navbar -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Mobile Search -->
+    <div id="SearchBoxMobile" class="search-mobile collapsed" aria-expanded="false">
+      <!-- Search box -->
+      <div class="search-box visible-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <div class="search-box-content">
+
+                <!-- Search bar -->
+                <!-- ^tmp_elements=search_bar^ -->
+                <div id="search-bar" class="ng-scope">
+                  <div class="search-bar-element search-field-container search-bar-location-field">
+                    <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+
+                    <input id="search-keywords-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-pristine ng-untouched ng-valid" placeholder="Job Title or Category">
+
+                    <ul id="keyword-suggestions" class="list-group autocomplete-list suggestions-list ng-hide" role="list">
+                      <li ng-repeat-end="" class="autocompletefooter"></li>
+                    </ul>
+                  </div>
+
+                  <div class="search-bar-element search-field-container search-location-field">
+                    <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                    <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-valid ng-dirty ng-touched" placeholder="City or Postal Code" >
+
+                    <ul id="suggestions" class="list-group autocomplete-list suggestions-list hide-for-build-development" role="list" >
+                      <li class="blockSpan list-group-item ng-binding ng-scope" >Miami, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope active" >Miami Beach, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope" >Miami Gardens, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope">Miami Lakes, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope">Miami, OK, USA</li>
+
+                      <li class="autocompletefooter ng-scope"><img src="public/cms_base/img/powered_by_google_on_white.png" align="right" class="google-footer"></li>
+                    </ul>
+                  </div>
+
+                  <div class="search-bar-element search-field-container search-location-field ng-hide">
+                    <label id="lblmultilocation" for="search-location-field_multi" class="hidden-xs search-bar-location-label label-text">Locations (up to 3):</label>
+
+                    <div class="ui-select-container ui-select-multiple ui-select-bootstrap dropdown form-control ng-valid" id="search-location-field_multi" limit="3" reset-search-input="true" sortable="true" close-on-select="false">
+                      <div>
+                        <span class="ui-select-match" id="suggestions_multi" placeholder="City or Postal Code"></span>
+                        <input type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="ui-select-search input-xs ng-pristine ng-untouched ng-valid" placeholder="City or Postal Code" role="combobox" aria-expanded="false" aria-label="Select box" ondrop="return false;" style="width: 10px;">
+                      </div>
+
+                      <ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide">
+                        <li class="ui-select-choices-group" id="ui-select-choices-1">
+                          <div class="divider ng-hide"></div>
+                          <div class="ui-select-choices-group-label dropdown-header ng-binding ng-hide"></div>
+                        </li>
+                      </ul>
+
+                      <div class="ui-select-no-choice"></div>
+                      <ui-select-multiple></ui-select-multiple>
+                    </div>
+                  </div>
+
+                  <div class="search-bar-element search-widget-container">
+                    <a id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text" href="^site_language^/en-US/search">Search</a>
+                  </div>
+                </div>
+                <!-- End Search bar -->
+
+                <!-- View all jobs -->
+                <div class="link-center">
+                  <a href="^site_language^/search" class="view-all-jobs" title="View All Jobs at CoWorx">View All Jobs at CoWorx</a>
+                </div>
+                <!-- End View all jobs -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Search box -->
+    </div>
+    <!-- End Mobile Search -->
+
+    <!-- Desktop Search -->
+    <div class="search-desktop hidden-xs">
+      <!-- Search box -->
+      <div class="search-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="search-box-content">
+
+                <!-- Search bar -->
+                <!-- ^tmp_elements=search_bar^ -->
+                <div id="search-bar" class="ng-scope">
+                  <div class="search-bar-element search-field-container search-bar-location-field">
+                    <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+
+                    <input id="search-keywords-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-pristine ng-untouched ng-valid" placeholder="Job Title or Category">
+
+                    <ul id="keyword-suggestions" class="list-group autocomplete-list suggestions-list ng-hide" role="list">
+                      <li ng-repeat-end="" class="autocompletefooter"></li>
+                    </ul>
+                  </div>
+
+                  <div class="search-bar-element search-field-container search-location-field">
+                    <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                    <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-valid ng-dirty ng-touched" placeholder="City or Postal Code" >
+
+                    <ul id="suggestions" class="list-group autocomplete-list suggestions-list hide-for-build-development" role="list" >
+                      <li class="blockSpan list-group-item ng-binding ng-scope" >Miami, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope active" >Miami Beach, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope" >Miami Gardens, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope">Miami Lakes, FL, USA</li>
+                      <li class="blockSpan list-group-item ng-binding ng-scope">Miami, OK, USA</li>
+
+                      <li class="autocompletefooter ng-scope"><img src="public/cms_base/img/powered_by_google_on_white.png" align="right" class="google-footer"></li>
+                    </ul>
+                  </div>
+
+                  <div class="search-bar-element search-field-container search-location-field ng-hide">
+                    <label id="lblmultilocation" for="search-location-field_multi" class="hidden-xs search-bar-location-label label-text">Locations (up to 3):</label>
+
+                    <div class="ui-select-container ui-select-multiple ui-select-bootstrap dropdown form-control ng-valid" id="search-location-field_multi" limit="3" reset-search-input="true" sortable="true" close-on-select="false">
+                      <div>
+                        <span class="ui-select-match" id="suggestions_multi" placeholder="City or Postal Code"></span>
+                        <input type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="ui-select-search input-xs ng-pristine ng-untouched ng-valid" placeholder="City or Postal Code" role="combobox" aria-expanded="false" aria-label="Select box" ondrop="return false;" style="width: 10px;">
+                      </div>
+
+                      <ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide">
+                        <li class="ui-select-choices-group" id="ui-select-choices-1">
+                          <div class="divider ng-hide"></div>
+                          <div class="ui-select-choices-group-label dropdown-header ng-binding ng-hide"></div>
+                        </li>
+                      </ul>
+
+                      <div class="ui-select-no-choice"></div>
+                      <ui-select-multiple></ui-select-multiple>
+                    </div>
+                  </div>
+
+                  <div class="search-bar-element search-widget-container">
+                    <a id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text" href="^site_language^/en-US/search">Search</a>
+                  </div>
+                </div>
+                <!-- End Search bar -->
+
+                <!-- View all jobs -->
+                <div class="link-center">
+                  <a href="^site_language^/search" class="view-all-jobs" title="View All Jobs at CoWorx">View All Jobs at CoWorx</a>
+                </div>
+                <!-- End View all jobs -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Search box -->
+    </div>
+    <!-- End Desktop Search -->
+
+
+
+    <!-- Internals section -->
+    <section class="internals-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <!-- Job details view -->
+            <div class="container jdp-breadcrumb-container">
+              <div id="jdp-breadcrumb-row" class="row">
+                <div class="hidden-xs col-sm-12">
+                  <ol class="breadcrumb">
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">CoWorx</a></li>
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">All Jobs</a></li>
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">Seattle, WA</a></li>
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">Information Technology</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div id="jdp-title-container" class="jdp-title-container">
+              <div class="jdp-title-container-overlay">
+                <div class="container">
+                  <div class="row jdp-title-bar-row">
+                    <div class="col-sm-12">
+                      <div class="jdp-title-inner-container">
+                        <div class="jdp-title-block-position">
+                          <h1 id="jdp-title-job-title" class="jdp-job-title">
+                            <span class="jdp-title-job-title">Software Engineer (Software Developer)</span>
+                            <span class="jdp-title-job-in">in</span>
+                            <span class="jdp-title-job-location">Seattle, WA</span>
+                            <span class="jdp-title-job-at">at</span>
+                            <span class="jdp-title-job-company">CoWorx</span>
+                          </h1>
+
+                          <div id="jdp-title-date-posted" class="job-date-posted">
+                            <strong>Date Posted:</strong> 4/8/2017
+                          </div>
+                        </div>
+
+                        <div class="jdp-top-apply-block-position">
+                          <div id="jdp-apply-section-top" class="jdp-apply-section">
+                            <a id="jdp-apply-button-top" ng-click="registerApplyStartEvent($event)" ng-href="{{ applyURL }}"
+                            class="primary-button block-element">Apply</a>
+                            <a id="jdp-not-ready-to-apply-link-top" href="#" class="jdp-join-link">Not ready to Apply?</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="job-details-content">
+              <div class="container">
+                <div class="row">
+                  <!-- Right Column -->
+                  <div class="jdp-right-column col-md-4 col-md-push-8">
+                    <!-- Social Sharing -->
+                    <div id="jdp-social-sharing-section" class="hidden-sm hidden-xs">
+                      <div class="jdp-social-sharing-card content-card">
+                        <div class="social-sharing-title">
+                          Share With:
+                        </div>
+
+                        <div class="social-button-container">
+                          <span class="social-sharing-buttons addthis_toolbox addthis_32x32_style">
+                            <a class="addthis_button_facebook at300b" title="Facebook" href="#"><span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" title="Facebook" alt="Facebook" style="width: 32px; height: 32px;" class="at-icon at-icon-facebook"><title id="at-svg-facebook-1">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a>
+
+                            <a class="addthis_button_twitter at300b" title="Twitter" href="#"><span class="at-icon-wrapper" style="background-color: rgb(29, 161, 242); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" title="Twitter" alt="Twitter" style="width: 32px; height: 32px;" class="at-icon at-icon-twitter"><title id="at-svg-twitter-2">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a>
+
+                            <a class="addthis_button_linkedin at300b" target="_blank" title="LinkedIn" href="#"><span class="at-icon-wrapper" style="background-color: rgb(0, 119, 181); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-linkedin-3" title="LinkedIn" alt="LinkedIn" style="width: 32px; height: 32px;" class="at-icon at-icon-linkedin"><title id="at-svg-linkedin-3">LinkedIn</title><g><path d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z" fill-rule="evenodd"></path></g></svg></span></a>
+
+                            <a class="addthis_button_google_plusone_share"></a>
+
+                            <a class="addthis_button_email at300b" target="_blank" title="Email" href="#"><span class="at-icon-wrapper" style="background-color: rgb(132, 132, 132); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-email-4" title="Email" alt="Email" style="width: 32px; height: 32px;" class="at-icon at-icon-email"><title id="at-svg-email-4">Email</title><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a>
+
+                            <div class="atclear"></div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Social Sharing -->
+
+                    <!-- Snapshot-->
+                    <div id="jdp-job-snapshot-section">
+                      <div class="jdp-job-snapshot-card content-card">
+                        <h2 class="content-card-header">Job Snapshot</h2>
+                        <ul class="snapshot-padding">
+
+                          <!-- Employee Type-->
+                          <li class="job-employee-type">
+                            <span class="glyphicon glyphicon-hourglass snapshot-icon secondary-text-color"></span>
+
+                            <div class="snapshot-text">
+                              <strong>Employee Type:</strong><br/>
+
+                              <div class="secondary-text-color">Full-Time</div>
+                            </div>
+                          </li>
+
+                          <!-- Location -->
+                          <li class="job-location">
+                            <i class="glyphicon glyphicon-map-marker snapshot-icon secondary-text-color"></i>
+
+                            <div class="snapshot-text">
+                              <strong>Location:</strong><br>
+
+                              <div class="secondary-text-color">14225 Dearborn Street</div>
+                              <a class="secondary-text-color job-snapshot-link" href="#">
+                                <span class="jobLocation">KS-Overland Park-Nicklaus Golf Club Lionsgate</span>
+                              </a>
+                            </div>
+                          </li>
+
+                          <!-- Job Type -->
+                          <li class="job-categories">
+                            <span class="glyphicon glyphicon-triangle-top snapshot-icon secondary-text-color"></span>
+
+                            <div class="snapshot-text">
+                              <strong>Job Type:</strong><br/>
+
+                              <a class="secondary-text-color job-snapshot-link" href="#">Information Technology</a>
+                            </div>
+                          </li>
+
+                          <!-- Experience -->
+                          <li class="job-experience">
+                            <i class="fa fa-briefcase snapshot-icon secondary-text-color"></i>
+
+                            <div class="snapshot-text">
+                              <strong>Experience:</strong><br/>
+
+                              <div class="secondary-text-color">Not Specified</div>
+                            </div>
+                          </li>
+
+                          <!-- Date Posted -->
+                          <li class="job-date-posted">
+                            <i class="fa fa-clock-o snapshot-icon secondary-text-color"></i>
+
+                            <div class="snapshot-text">
+                              <strong>Date Posted:</strong><br/>
+
+                              <div class="secondary-text-color">4/8/2017</div>
+                            </div>
+                          </li>
+
+                          <!-- Job ID -->
+
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- JDP Media Section-->
+                    <div id="jdp-media-content-section" class="hidden-sm hidden-xs">
+                    </div>
+
+                    <!-- About Us -->
+                    <div id="jdp-about-us-section" class="hidden-sm hidden-xs">
+                    </div>
+                  </div>
+
+                  <!-- Left Column -->
+                  <div class="jdp-left-column col-md-8 col-md-pull-4">
+                    <!-- Job Description -->
+                    <div id="jdp-job-description-section">
+                      <div class="jdp-job-description-card content-card">
+                        <h2 class="content-card-header">Job Description</h2>
+
+                        <div><p>If you are a highly motivated and detail-oriented person who is good at problem solving and wants an opportunity to work in a team environment, then join our Corporate Applications development team!  We have an opening for a Software Engineer on an IT team that supports various internal customers.  This is a great opportunity to work on a team experienced in following Agile SCRUM methodology, help to migrate our infrastructure to MVC, Service Oriented Architecture, and use Open Source framework including Ruby on Rails.  This team is responsible for developing and supporting multiple internal services that are critical to daily activities of various groups within CareerBuilder.<br /><br /> <br />We are seeking a self-directed and flexible Software Engineer with excellent communication skills who will design and implement solutions in .NET or other Open Source framework tools to solve business problems on a company-wide scale. You will work on the analysis, design and implementation of solutions to meet a multitude of CareerBuilder’s business needs. If you are an industrious, well-natured professional and want to work in an enterprising and stimulating environment, then CareerBuilder may be the right place you!<br /><br /><b>.NET Developer – Software Engineer (Software Developer)</b><br /><br /><b>Job Responsibilities:</b><br /><br />As a Software Engineer, you will work with other developers and participate in the architecture and design of user interfaces, business objects and overall infrastructure. You will also communicate openly with team leads and other team members in relation to the status of projects and express your thoughts, accomplishments and roadblocks in daily meetings.<br /><br /><b>Additional responsibilities for the Software Engineer include:</b><br /><br />• Maintaining and creating business objects & web services for an N-tier 24x7 production environment<br />• Developing web pages and web services<br />• Creating and maintaining customized software modules<br />• Ensuring that customer expectations are clear and deadlines are met<br />• Embracing agile lean development methodology for providing fast and efficient delivery of solutions<br />• Investigating and resolving customer and platform related issues<br />• Creating and modifying Tables and Data</p></div>
+
+                        <div>TSR ID:001835--</div>
+                      </div>
+                    </div>
+
+                    <!-- Job Requirements -->
+                    <div id="jdp-job-requirements-section">
+                      <div class="jdp-job-requirements-card content-card">
+                        <h2 class="content-card-header">Job Requirements</h2>
+
+                        <p><b>.NET Developer – Software Engineer (Software Developer)</b><br /><br />As a Software Engineer, you must be a tenacious and structured individual who has very good object-oriented knowledge and great communication skills. You must also show leadership skills and strive to address problems proactively, methodically and candidly.<br /><br />Additional requirements of the Software Engineer include:<br />* Bachelor’s degree in Computer Science, Computer Systems or other related field<br />* Familiarity with VB.NET, SQL, Javascript, AJAX, Web Services, ASP.NET, HTTP and/or XML<br />* Experience developing frontend web pages is a plus<br />* Experience using Open Source tools like Ruby on Rails is a plus<br /><br /><b>Benefits</b><br /><br /><b>We’re All About You!</b><br /><br />When you're focused on the goal, not the path – you can be more flexible, and that translates into more productive and satisfied employees. From flexible hours to volunteering during work hours to diverse education opportunities, CareerBuilder.com is committed to helping employees strike a balance.<br /><br /><b>Here are just some of the Truly Amazing benefits we offer:</b><br /><br />• World-Class Training that positions you to hit the ground running with ongoing learning and development courses; we never stop investing in our people.<br />• Comprehensive Medical, Dental & Vision Programs<br />• Education Reimbursement Program allowing up to $5k per year towards completion of a Bachelor’s and non-MBA graduate degree, and up to $10K per year towards completion of an MBA!  No strings attached!<br />• $400 Annual Reimbursement for Wellness Activities, including your gym membership!<br />• 401(k) Program with Strong Employer Match and 2 year vesting schedule!<br />• Summer Hours – From July 1st through end of August your weekends start at 12pm on Fridays!<br />• Five Star Company Paid Trips-if you hit your numbers, pack your bags and get ready to experience luxury!<br /><br />CareerBuilder, LLC is proud to be an Equal Opportunity Employer. Applicants are considered for all positions without regard to race, color, religion, sex, national origin, age, disability, sexual orientation, ancestry, marital or veteran status.</p>
+                      </div>
+                    </div>
+
+                    <!-- Desktop Apply Now Section-->
+                    <div id="jdp-bottom-apply-section">
+                      <div class="jdp-bottom-apply-card content-card">
+                        <div class="row">
+                          <div id="jdp-bottom-apply-company-logo-col" class="col-sm-3">
+                          </div>
+
+                          <div class="col-sm-3 col-md-5"></div>
+
+                          <div id="jdp-bottom-apply-button-col" class="col-sm-6 col-md-4">
+                            <div id="jdp-apply-section-bottom" class="jdp-apply-section">
+                              <a id="jdp-apply-button-bottom" ng-click="registerApplyStartEvent($event)" ng-href="{{ applyURL }}"
+                              class="primary-button block-element">Apply</a>
+                              <a id="jdp-not-ready-to-apply-link-bottom" href="#" class="jdp-join-link">Not ready to Apply?</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="jdp-similar-jobs-row" class="row similar-jobs-container" >
+                  <div class="col-sm-12">
+                    <h3><b>CHECK OUT OUR SIMILAR JOBS</b></h3>
+
+                    <ol class="similar-jobs">
+                      <li class="similar-job-element"><a href="#" class="similar-jobs-tag">Software Engineer Jobs</a></li>
+                      <li class="similar-job-element"><a href="#" class="similar-jobs-tag">Project Engineer Jobs</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Job details view -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Internals section -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- navigation footer -->
+    <section class="footer-top">
+      <div class="background-menu"></div>
+
+      <div class="container">
+        <div class="row flex-container">
+          <div class="col-xs-12 no-padding-xs">
+            <!-- logo footer -->
+            <div class="logo-footer">
+              <a href="/" class="logo-bottom">
+                <img src="img/logo.png" alt="logo-footer" class="img-responsive">
+              </a>
+            </div>
+            <!-- end logo footer -->
+
+            <!-- List footer -->
+            <div class="footer-menu">
+              <ul class="">
+                <li><a href="/" title="Home">Home</a></li>
+                <li><a href="/search" title="All Jobs">All Jobs</a></li>
+                <li><a href="/join" title="Join Our Talent Network">Join Our Talent Network</a></li>
+              </ul>
+            </div>
+            <!-- end List footer -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end navigation footer -->
+
+    <!-- social media -->
+    <section class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-sm-offset-9 col-md-2 col-md-offset-10">
+
+            <div class="social-icons">
+              <ul class="list-inline social-items">
+                <li>
+                  <a href="https://www.facebook.com/coworxstaffingservices/?ref=bookmarks" class="" target="_blank" title="Facebook">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/coworx-staffing-services" class="" target="_blank" title="LinkedIn">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/CoWorxStaffingServ" class="" target="_blank" title="YouTube">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End social media -->
+
+    <!-- section Copy -->
+    <section class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <div class="copy-list">
+              <ul>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-and-condition">Terms & Conditions</a></li>
+                <li>© 2019 CoWorx Staffing. <span>All Rights Reserved.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section Copy -->
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Replace CMS media flag -->
+  <script src="js/replaceMedia.js" charset="utf-8"></script>
+  <!-- End Replace CMS media flag -->
+</body>
+</html>

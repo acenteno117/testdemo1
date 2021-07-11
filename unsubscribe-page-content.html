@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at [Company]</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <!-- Internals section -->
+  <section class="internals-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+
+          <!-- Unsubscribe view -->
+          <div class="row" ng-controller="ManageSubscriptions as vm">
+            <div class="col-xs-12 ">
+              <!-- Header Row -->
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 id="subscription-title" class="text-uppercase text-center">
+                    Manage Email Subscriptions
+                  </h1>
+
+                  <br/>
+                </div>
+              </div>
+
+              <hr width="65%">
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2" name="formContainer">
+                  <form id="subscription-form" class="form-group centered" name="unsubscribeForm"
+                  ng-submit="vm.unsubscribe()">
+
+                  <div id="subscription-message-section">
+                    <div id="subscription-initial-message" ng-show="vm.showFirstMessage" class="alert fadein fadeout alert-success">
+                      <p>You have successfully been unsubscribed from this type of email.  Please take a moment and review your other subscription settings.</p>
+                    </div>
+
+                    <div id="subscription-success-message" ng-show="vm.showSuccess" class="alert fadein fadeout alert-success">
+                      <p>Your subscriptions have been updated successfully.</p>
+                    </div>
+
+                    <div id="subscription-error-message" ng-show="vm.showError" class="alert fadein fadeout alert-danger">
+                      <p>Sorry, we could not update your subscriptions at this time.  Please try again later.</p>
+                    </div>
+                  </div>
+
+                  <div id="subscription-question-section">
+                    <h2 id="subscription-instructions">
+                      I would like to receive the following emails:<br/>
+                    </h2>
+
+                    <div class="subscription-options-section">
+                      <div id="subscription-job-alert-section">
+                        <input id="subscription-job-alerts-input" class="subscription-check-box" type="checkbox"
+                        ng-click="vm.toggleOffAllUnSub()" ng-model="vm.jobAlerts"/> <span
+                        class="subscriptione-option-title">Job Alerts:</span>
+                        <p>Allow us to send weekly alerts of new jobs that match your specified preferences.</p>
+                      </div>
+
+                      <div id="subscription-recruiter-emails-section">
+                        <input id="subscription-recruiter-emails-input" class="subscription-check-box" type="checkbox"
+                        ng-click="vm.toggleOffAllUnSub()" ng-model="vm.recruiterEmails"/> <span
+                        class="subscription-option-title">Recruiter Emails:</span>
+                        <p>Your talent network member profile allows our team to email you personally regarding various opportunities and events.</p>
+                      </div>
+                    </div>
+
+                    <h2 class="subscription-option-title">Unsubscribe me from ALL emails:</h2>
+
+                    <div id="subscription-unsubscribe-all-section">
+                      <input id="subscription-unsubscribe-all-input" class="subscription-check-box" type="checkbox"
+                      ng-click="vm.toggleAllUnSub()" ng-model="vm.unsubAll"/><span>Unsubscribe from ALL</span>
+                    </div>
+                  </div>
+
+                  <div id="subscription-save-button-section">
+                    <input id="subscription-save-btn" class="btn btn-default text-uppercase primary-button" type="submit" value="Save"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Unsubscribe view -->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Internals section -->
+
+<!-- Footer -->
+<footer>
+</footer>
+<!-- End Footer -->
+
+<!-- Replace CMS media flag -->
+<script src="js/replaceMedia.js" charset="utf-8"></script>
+<!-- End Replace CMS media flag -->
+</body>
+</html>

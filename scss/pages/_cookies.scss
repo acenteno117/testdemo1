@@ -1,0 +1,75 @@
+/// -----------------------------------------------------------------------------
+/// This file contains styles that are specific to the cookie bar.
+/// -----------------------------------------------------------------------------
+
+/// Hide cookie policy bar
+@if $hide-cookies-bar{
+  .cookies-hide-for-build-development{
+    display: none;
+  }
+}
+/// End Hide cookie policy bar
+
+/// Cookie bar without Cookie Policy link
+#cookies-policy-bar-placeholder{
+  display: none;
+}
+
+/// Cookie bar with Cookie Policy link
+#cookies-policy-bar-section{
+  background: $primary-color;
+
+  position: fixed;
+  z-index: 1035;
+  bottom: 0px;
+  top: auto;
+  left: 0px;
+  right: 0px;
+  padding: 0px;
+
+  width: 100%;
+  height: auto;
+  // display: block;
+
+  #cookies-policy-bar{
+    padding: 10px;
+  }
+
+  #cookies-policy-bar-dismiss-button{
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    @include on-event(true){
+      color: $white;
+      font-size: $body-font-size;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    @include on-event{
+      opacity: 0.7;
+    }
+  }
+
+  .text-center{
+    color: $white;
+    font-size: $body-font-size;
+
+    #cookies-policy-link{
+      opacity: 1;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      @include on-event(true){
+        color: $white;
+        font-size: $body-font-size;
+        text-decoration: underline;
+      }
+
+      @include on-event{
+        opacity: 0.7;
+      }
+    }
+  }
+}

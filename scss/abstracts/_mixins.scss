@@ -1,0 +1,57 @@
+/// -----------------------------------------------------------------------------
+/// This file contains all application-wide Sass mixins.
+/// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param{Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false){
+  @if $self{
+    &,
+    &:hover,
+    &:active,
+    &:focus{
+      @content;
+    }
+  } @else{
+    &:hover,
+    &:active,
+    &:focus{
+      @content;
+    }
+  }
+}
+
+/// Flex setup for navigation elements. Apply this on sm view (768px and up)
+@mixin flex-navigation{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin flex-child{
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+/// Mixin for Placeholder
+@mixin placeholder{
+  &::-webkit-input-placeholder{@content}
+  &:-moz-placeholder{@content}
+  &::-moz-placeholder{@content}
+  &:-ms-input-placeholder{@content}
+}

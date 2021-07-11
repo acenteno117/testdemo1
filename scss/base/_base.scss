@@ -1,0 +1,74 @@
+/// -----------------------------------------------------------------------------
+/// This file contains very basic styles.
+/// -----------------------------------------------------------------------------
+
+body{
+  background-color: $body-color;
+  font-family: $primary-font;
+  font-style: normal;
+  font-size: $body-font-size;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  color: $primary-color;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+/// Main titles
+h1, .internals-titles{
+  text-transform: uppercase;
+}
+
+/// Basic styles for text
+p{
+  color: $text-color;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/// Basic styles for links
+a{
+  // color: $hover-color;
+  color: $primary-color;
+  line-height: 1.5;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  @include on-event{
+    color: $hover-color;
+    text-decoration: underline;
+  }
+}
+
+/// Text selection colors
+::-moz-selection{
+  background: $primary-color;
+  color: $white;
+}
+
+::selection{
+  background: $primary-color;
+  color: $white;
+}
+
+/// Hide location dropdown for development
+@if $hide-dropdown {
+  .hide-for-build-development{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  h1{
+  }
+
+}

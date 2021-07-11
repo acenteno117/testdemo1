@@ -1,0 +1,477 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home-banner{
+  // background: url("^media_src_home-banner-mobile.png^") $white no-repeat center center;
+  background: url("^media_src_home-banner.png^") $white no-repeat top right;
+  background-size: cover;
+  height: 450px; // -> Always
+  position: relative;
+  background-position-x: 75%;
+}
+
+// .content-banner{
+//   background: url("^media_src_content-banner-mobile.png^") $white no-repeat center center;
+//   background-size: cover;
+//   height: 240px;
+//   position: relative;
+// }
+
+.benefits-home{
+  background: url("^media_src_home-benefits-banner.png^") $white no-repeat center center;
+  background-size: cover;
+  // height: 450px; // -> Always
+  position: relative;
+}
+
+section.home_jobs {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  // margin-bottom: 30px;
+}
+section.together-home {
+  padding-bottom: 80px;
+  .together-text {
+    h2 {
+      color: $fourth-color;
+      font-size: 36px;
+      font-family: helvetica;
+      line-height: 1.2;
+      margin-bottom: 20px;
+
+      span {
+        display: block;
+      }
+    }
+    p {
+      color: $fourth-color;
+      line-height: 24px;
+    }
+  }
+  .img-sidebar {
+    margin-top: 24px;
+  }
+}
+
+section.home_jobs {
+  background-color: #f6f7f9;
+}
+
+.overlay-container {
+  background-color: rgba(32, 27, 27, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  bottom: 0;
+
+}
+
+
+.home-galery {
+  position: relative;
+  // padding-bottom: 16px;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.30);
+  max-width: 360px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+
+  .image-container{
+    position: relative;
+    .overlay-container{
+      h2{
+        color: $white;
+        padding-top: 45px;
+        font-family: helvetica;
+        font-size: 36px;
+        padding-left: 15px;
+        line-height: 1.2;
+        &.direct-text {
+          // padding-top: 82px;
+          margin-top: 64px;
+        }
+      }
+    }
+  }
+  .text-container{
+    border: 2px solid transparent;
+    padding: 12px;
+    padding-bottom: 62px;
+    // min-height: 360px;
+    // -webkit-box-shadow: -1px 1px 14px 2px rgba(0,0,0,0.66);
+    // -moz-box-shadow: -1px 1px 14px 2px rgba(0,0,0,0.66);
+    // box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.56);
+    // box-shadow: -1px 1px 14px 2px rgba(0,0,0,0.66);
+
+    p {
+      color: #464646;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.together-text {
+  padding-top: 80px;
+}
+
+
+section.benefits-home {
+  margin-top: 80px;
+
+  .home-benefits-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex:1;
+    -ms-flex:1;
+    flex:1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    max-width: 480px;
+
+    .img-benefits{
+      width: 98px;
+    }
+  }
+  .text-benefits {
+    min-width: 185px;
+    margin-left: 30px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .top-benefits {
+    padding-top: 22px;
+
+    h2 {
+      text-align: center;
+      color: #464646;
+      font-size: 36px;
+      line-height: 1.2;
+
+      span {
+        display: block;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      // padding: 0px 3px;
+      padding-top: 4px;
+      padding-bottom: 48px;
+    }
+
+  }
+
+  .button-benefits {
+    padding-top: 56px;
+    padding-bottom: 45px;
+
+    p {
+      text-align: center;
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.not-ready-join {
+  padding: 15px 0px;
+  text-align: center;
+
+
+  a.btn.btn-join.jf-btn {
+    width: 290px;
+    background-color: $white;
+    color:  $secondary-color;
+    border-radius: 40px;
+    border: 2px solid $secondary-color;
+    font-weight: bold;
+  }
+
+}
+
+.benefits-center {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 480px;
+
+  margin-bottom: 30px;
+}
+
+section.not-ready {
+  padding: 48px 0px;
+  .not-ready-text {
+
+    h2{
+      color: $fourth-color;
+      font-size: 36px;
+      font-family: helvetica;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+      padding-bottom: 10px;
+      padding-top: 4px;
+
+      span {
+        display: block;
+      }
+    }
+
+    p{
+      text-align: center;
+    }
+
+    .not-ready-join {
+      a {
+        @include on-event {
+          background-color: $secondary-color;
+          color: $white;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .home-banner{
+    background-image: url("^media_src_home-banner.png^");
+    background-size: cover;
+    height: 570px;
+
+    .search-container{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 86px;
+      // bottom: 80px;
+    }
+  }
+
+  // .content-banner{
+  //   background: none;
+  //   height: auto;
+  //
+  //   #content-carousel{
+  //     .item{
+  //       background: url("^media_src_banner.png^") $white no-repeat center center;
+  //       background-size: cover;
+  //       height: 620px;
+  //     }
+  //   }
+  // }
+
+
+  .home-galery{
+    margin-bottom: 35px;
+  }
+
+  .benefits-home{
+    background: url("^media_src_home-benefits-banner.png^") $white no-repeat center center;
+    background-size: cover;
+    // height: 450px; // -> Always
+    position: relative;
+
+    .flex-row{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+  }
+
+  .img-benefits {
+    display: inline;
+    float: left;
+    margin: 12px 19px;
+
+  }
+
+
+  .text-benefits {
+    display: inline;
+    margin: 12px 5px;
+
+  }
+
+  .home-galery .image-container .overlay-container h2 {
+    color: #fff;
+    // padding-top: 22px;
+    position: absolute;
+    bottom: 10px;
+    font-family: helvetica;
+    font-size: 29px;
+
+    &.direct-text {
+      padding-top: 12px;
+    }
+
+  }
+
+
+  .home-galery .text-container {
+    border: 2px solid transparent;
+    padding: 12px;
+    // min-height: 398px;
+    min-height: 412px;
+    min-height: 265px;
+
+    p{
+      margin: 0px;
+    }
+  }
+
+
+  section.together-home{
+    .together-text{
+      padding-top: 28px;
+      h2{
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  section.not-ready {
+    .not-ready-text {
+      h2 {
+        span {
+          display: inline-block;
+        }
+      }
+    }
+    .not-ready-join {
+      text-align: center;
+
+
+    }
+  }
+  section.benefits-home {
+
+    .button-benefits {
+      padding-top: 56px;
+      padding-bottom: 10px;
+
+      p {
+        text-align: right;
+        span {
+          display: inline;
+        }
+
+      }
+    }
+
+    .top-benefits {
+      h2 {
+        span {
+          display: inline;
+        }
+      }
+    }
+
+    .text-benefits {
+      min-width: 0px;
+
+    }
+
+  }
+
+  .not-ready-join a.btn.btn-join.jf-btn {
+    width: 290px;
+    background-color: #fff;
+    color: #ee1d25;
+    border-radius: 20px;
+    border: 2px solid #ee1d25;
+    font-weight: bold;
+    padding: 6.5px 15px;
+
+  }
+
+
+
+}
+
+@media (min-width: 992px) {
+
+
+  .home-galery .text-container {
+    border: 2px solid transparent;
+    padding: 12px;
+    min-height: 290px;
+    // min-height: 254px;  para 1200
+  }
+
+  .home-galery .image-container .overlay-container h2 {
+
+    font-size: 36px;
+  }
+
+  section.together-home .img-sidebar {
+    margin-top: 57px;
+  }
+  section.together-home .together-text h2 span {
+    display: inline;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .home-galery .image-container .overlay-container h2 {
+
+    span {
+      display: block;
+    }
+
+
+  }
+
+  .home-galery .text-container {
+    border: 2px solid transparent;
+    padding: 12px;
+    min-height: 270px;
+    // min-height: 254px;  para 1200
+
+    p {
+      margin-left: 14px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  section.benefits-home .home-benefits-icon .img-benefits {
+    margin-left: 0px;
+  }
+  section.benefits-home .text-benefits {
+    margin-left: 0px;
+
+  }
+
+  section.together-home .together-text {
+    padding-top: 79px;
+  }
+
+}

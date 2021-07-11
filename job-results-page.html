@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at CoWorx</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <!-- Header -->
+  <header id="back-top" class="home-header">
+    <!-- Top social -->
+
+    <!-- End Top social -->
+
+    <!-- Top navbar -->
+    <section class="top-navbar">
+
+
+      <!-- Navbar default -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="background-menu">
+
+        </div>
+        <!-- Container -->
+        <div class="container flex-container">
+
+          <!-- Navbar mobile -->
+          <div class="navbar-header">
+            <!-- Navbar toggle (hamburger) -->
+            <button type="button" class="hamburger navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- End Navbar toggle (hamburger) -->
+
+            <!-- Mobile search button -->
+            <button type="button" class="navbar-toggle search-toggle-button-mobile collapsed" data-toggle="collapse" data-target="#SearchBoxMobile" aria-expanded="false" title="Search">
+              <span class="sr-only">Toggle search</span>
+              <i class="fa fa-search"></i>
+            </button>
+            <!-- End Mobile search button -->
+
+            <!-- Logo mobile -->
+            <a href="^site_language^/" class="navbar-brand visible-xs" title="CoWorx Careers" alt="CoWorx Careers">
+              <img src="^media_src_logo-mobile.png^" alt="CoWorx Careers">
+            </a>
+            <!-- End Logo mobile -->
+
+            <!-- Logo desktop -->
+            <a href="^site_language^/" class="navbar-brand hidden-xs" title="CoWorx Careers" alt="CoWorx Careers">
+              <img src="^media_src_logo.png^" alt="CoWorx Careers">
+            </a>
+            <!-- End Logo desktop -->
+          </div>
+          <!-- End Navbar mobile -->
+
+          <!-- Navbar collapse -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <!-- Navbar nav -->
+            <ul class="nav navbar-nav">
+              <!-- Navigation -->
+              <!-- ^navigation^ -->
+              <li class="active">
+                <a href="/" target="">
+                  Home
+                </a>
+              </li>
+              <li class="">
+                <a href="/search" target="">
+                  All Jobs
+                </a>
+              </li>
+
+              <li class="">
+                <a href="/join" target="">
+                  Join Our Talent Network
+                </a>
+              </li>
+              <!-- End Navigation -->
+
+            </ul>
+            <!-- End Navbar nav -->
+          </div>
+          <!-- End Navbar collapse -->
+        </div>
+        <!-- Container -->
+      </nav>
+      <!-- End Navbar default -->
+    </section>
+    <!-- End Top navbar -->
+  </header>
+  <!-- End Header -->
+
+  <!-- Mobile Search -->
+  <div id="SearchBoxMobile" class="search-mobile collapsed" aria-expanded="false">
+    <!-- Search box -->
+    <div class="search-box visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="search-box-content">
+
+              <!-- Search bar -->
+              <!-- ^tmp_elements=search_bar^ -->
+              <div id="search-bar" class="ng-scope">
+                <div class="search-bar-element search-field-container search-bar-location-field">
+                  <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+
+                  <input id="search-keywords-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-pristine ng-untouched ng-valid" placeholder="Job Title or Category">
+
+                  <ul id="keyword-suggestions" class="list-group autocomplete-list suggestions-list ng-hide" role="list">
+                    <li ng-repeat-end="" class="autocompletefooter"></li>
+                  </ul>
+                </div>
+
+                <div class="search-bar-element search-field-container search-location-field">
+                  <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                  <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-valid ng-dirty ng-touched" placeholder="City or Postal Code" >
+
+                  <ul id="suggestions" class="list-group autocomplete-list suggestions-list hide-for-build-development" role="list" >
+                    <li class="blockSpan list-group-item ng-binding ng-scope" >Miami, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope active" >Miami Beach, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope" >Miami Gardens, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope">Miami Lakes, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope">Miami, OK, USA</li>
+
+                    <li class="autocompletefooter ng-scope"><img src="public/cms_base/img/powered_by_google_on_white.png" align="right" class="google-footer"></li>
+                  </ul>
+                </div>
+
+                <div class="search-bar-element search-field-container search-location-field ng-hide">
+                  <label id="lblmultilocation" for="search-location-field_multi" class="hidden-xs search-bar-location-label label-text">Locations (up to 3):</label>
+
+                  <div class="ui-select-container ui-select-multiple ui-select-bootstrap dropdown form-control ng-valid" id="search-location-field_multi" limit="3" reset-search-input="true" sortable="true" close-on-select="false">
+                    <div>
+                      <span class="ui-select-match" id="suggestions_multi" placeholder="City or Postal Code"></span>
+                      <input type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="ui-select-search input-xs ng-pristine ng-untouched ng-valid" placeholder="City or Postal Code" role="combobox" aria-expanded="false" aria-label="Select box" ondrop="return false;" style="width: 10px;">
+                    </div>
+
+                    <ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide">
+                      <li class="ui-select-choices-group" id="ui-select-choices-1">
+                        <div class="divider ng-hide"></div>
+                        <div class="ui-select-choices-group-label dropdown-header ng-binding ng-hide"></div>
+                      </li>
+                    </ul>
+
+                    <div class="ui-select-no-choice"></div>
+                    <ui-select-multiple></ui-select-multiple>
+                  </div>
+                </div>
+
+                <div class="search-bar-element search-widget-container">
+                  <a id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text" href="^site_language^/en-US/search">Search</a>
+                </div>
+              </div>
+              <!-- End Search bar -->
+
+              <!-- View all jobs -->
+              <div class="link-center">
+                <a href="^site_language^/search" class="view-all-jobs" title="View All Jobs at CoWorx">View All Jobs at CoWorx</a>
+              </div>
+              <!-- End View all jobs -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Search box -->
+  </div>
+  <!-- End Mobile Search -->
+
+  <!-- Desktop Search -->
+  <div class="search-desktop hidden-xs">
+    <!-- Search box -->
+    <div class="search-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="search-box-content">
+
+              <!-- Search bar -->
+              <!-- ^tmp_elements=search_bar^ -->
+              <div id="search-bar" class="ng-scope">
+                <div class="search-bar-element search-field-container search-bar-location-field">
+                  <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+
+                  <input id="search-keywords-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-pristine ng-untouched ng-valid" placeholder="Job Title or Category">
+
+                  <ul id="keyword-suggestions" class="list-group autocomplete-list suggestions-list ng-hide" role="list">
+                    <li ng-repeat-end="" class="autocompletefooter"></li>
+                  </ul>
+                </div>
+
+                <div class="search-bar-element search-field-container search-location-field">
+                  <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                  <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-valid ng-dirty ng-touched" placeholder="City or Postal Code" >
+
+                  <ul id="suggestions" class="list-group autocomplete-list suggestions-list hide-for-build-development" role="list" >
+                    <li class="blockSpan list-group-item ng-binding ng-scope" >Miami, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope active" >Miami Beach, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope" >Miami Gardens, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope">Miami Lakes, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope">Miami, OK, USA</li>
+
+                    <li class="autocompletefooter ng-scope"><img src="public/cms_base/img/powered_by_google_on_white.png" align="right" class="google-footer"></li>
+                  </ul>
+                </div>
+
+                <div class="search-bar-element search-field-container search-location-field ng-hide">
+                  <label id="lblmultilocation" for="search-location-field_multi" class="hidden-xs search-bar-location-label label-text">Locations (up to 3):</label>
+
+                  <div class="ui-select-container ui-select-multiple ui-select-bootstrap dropdown form-control ng-valid" id="search-location-field_multi" limit="3" reset-search-input="true" sortable="true" close-on-select="false">
+                    <div>
+                      <span class="ui-select-match" id="suggestions_multi" placeholder="City or Postal Code"></span>
+                      <input type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="ui-select-search input-xs ng-pristine ng-untouched ng-valid" placeholder="City or Postal Code" role="combobox" aria-expanded="false" aria-label="Select box" ondrop="return false;" style="width: 10px;">
+                    </div>
+
+                    <ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide">
+                      <li class="ui-select-choices-group" id="ui-select-choices-1">
+                        <div class="divider ng-hide"></div>
+                        <div class="ui-select-choices-group-label dropdown-header ng-binding ng-hide"></div>
+                      </li>
+                    </ul>
+
+                    <div class="ui-select-no-choice"></div>
+                    <ui-select-multiple></ui-select-multiple>
+                  </div>
+                </div>
+
+                <div class="search-bar-element search-widget-container">
+                  <a id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text" href="^site_language^/en-US/search">Search</a>
+                </div>
+              </div>
+              <!-- End Search bar -->
+
+              <!-- View all jobs -->
+              <div class="link-center">
+                <a href="^site_language^/search" class="view-all-jobs" title="View All Jobs at CoWorx">View All Jobs at CoWorx</a>
+              </div>
+              <!-- End View all jobs -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Search box -->
+  </div>
+  <!-- End Desktop Search -->
+
+
+  <!-- Internals section -->
+  <section class="internals-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+
+          <!-- Breadcrumb -->
+          <div id="jrp-breadcrumb-row-default" class="row hidden-xs hidden-sm">
+            <div class="col-sm-12 hidden-xs">
+              <ol class="breadcrumb">
+                <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">CoWorx</a></li>
+                <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">All Jobs</a></li>
+
+              </ol>
+            </div>
+          </div>
+          <!-- End Breadcrumb -->
+
+          <!-- JRP Title row -->
+          <div id="jrp-spelling-row" class="row hidden">
+            <div class="col-xs-12">
+              <h4>^corrected_spelling^</h4>
+              <h5>^original_spelling^</h5>
+            </div>
+          </div>
+
+          <div id="jrp-title-row" class="row">
+            <div class="col-md-12 hidden-xs hidden-sm">
+              <h1 class="search-results-title label-text ">
+                54321 Jobs at CoWorx
+              </h1>
+              <strong>
+
+              </strong>
+            </div>
+          </div>
+          <!-- End JRP Title row -->
+
+          <!-- JRP Title row (External Vendor Design) -->
+          <!-- <div id="jrp-spelling-row" class="row hidden">
+          <div class="col-xs-12">
+          <h4>^corrected_spelling^</h4>
+          <h5>^original_spelling^</h5>
+        </div>
+      </div>
+
+      <div id="jrp-title-row" class="row">
+      <div class="col-md-12 hidden-xs hidden-sm">
+      <h1 class="search-results-title label-text">
+      <span class="jrp-jobs-count">54321 Jobs</span>
+      at
+      <span class="jrp-job-company">CoWorx</span>
+    </h1>
+    <strong>
+
+  </strong>
+</div>
+</div> -->
+<!-- End JRP Title row (External Vendor Design) -->
+
+<!-- Jobs results -->
+<div id="job-results-page-main-content">
+<style>
+/*This has to be here due to the fact bootstrap adds an inline style to the elements listed that we need to override at certain resolutions.*/
+@media only screen and (min-width: 992px) {
+  .facet-collapsable, #desktop-facets-body {
+    height: inherit !important;
+  }
+}
+</style>
+
+<div id="jrp-mobile-sort-by-row" class="row visible-xs visible-sm">
+  <div class="mobile-sort-jobs ">
+    <div class="mobile-job-count-message">
+      881 Jobs sorted by:
+    </div>
+    <div class="mobile-dropdown-sort">
+
+      <div class="dropdown">
+        <a id="mobile-sort-title" href="#mobile-sort-options" class="dropdown-toggle" data-toggle="collapse">
+          <div id="mobile-selected-option-text" class="primary-text-color">Relevance</div>
+          <div id="mobile-selected-option-dropdown-arrow"><i class="fa fa-angle-down"></i></div>
+        </a>
+        <ul id="mobile-sort-options" class="collapse">
+          <li class="">
+            <a id="mobile-relevance-asc" href="/en-US/search?pagenumber=2">Relevance</a>
+          </li>
+          <li class="">
+            <a id="mobile-title-asc" href="/en-US/search?pagenumber=2&orderby=title">Title (A-Z)</a>
+          </li>
+          <li class="">
+            <a id="mobile-title-desc" href="/en-US/search?pagenumber=2&orderby=-title">Title (Z-A)</a>
+          </li>
+          <li class="">
+            <a id="mobile-company-asc" href="/en-US/search?pagenumber=2&orderby=company">Company Name (A-Z)</a>
+          </li>
+          <li class="">
+            <a id="mobile-company-desc" href="/en-US/search?pagenumber=2&orderby=-company">Company Name (Z-A)</a>
+          </li>
+          <li class="">
+            <a id="mobile-date-desc" href="/en-US/search?pagenumber=2&orderby=-date">Date Posted (Newest to Oldest)</a>
+          </li>
+          <li class="">
+            <a id="mobile-date-asc" href="/en-US/search?pagenumber=2&orderby=date">Date Posted (Oldest to Newest)</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="jrp-join-and-pagination-row" class="row join-row">
+  <div id="jrp-join-section" class="join-container col-xs-12 col-sm-6">
+    <a id="sign-up-widget" class="jrp-sign-up-widget secondary-text-color" href="/en-US/join">
+      <i class="fa fa-envelope-o sign-up-icon"></i>Sign up for job alert emails
+    </a>
+
+  </div>
+  <div id="jrp-pagination-section"
+  class="pagination-container   hidden-xs col-sm-6">
+  <ul class="pagination">
+    <li class="jrp-desktop-previous-page-element"><a class='previous-page-caret' href='/en-US/search?pagenumber=1'><</a></li>
+
+    <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=1">1</a></li>
+    <li class="active jrp-pagination-number"><a href="/en-US/search?pagenumber=2">2</a></li>
+    <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=3">3</a></li>
+    <li class=" jrp-pagination-number"><a href="">...</a></li>
+    <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=18">18</a></li>
+
+    <li class="jrp-desktop-next-page-element"><a class='next-page-caret' href='/en-US/search?pagenumber=3'>></a></li>
+
+  </ul>
+</div>
+</div>
+
+<div id="jrp-desktop-table" class="row">
+  <div id="jrp-desktop-facet-col" class="col-xs-12 col-md-3 ">
+    <div id="desktop-facets-container" class="">
+
+      <h3 id="narrow-search-header" class="tertiary-background-color label-strong collapsed no-pointer"
+      role="button" data-toggle="collapse" data-target="#desktop-facets-body" aria-expanded="false">
+      Narrow Search</h3>
+
+      <div id="desktop-facets-body" class="collapse">
+        <div class="desktop-facets">
+          <div onclick="toggleMobileFacets(this)" class="caret-facet-category-header no-pointer CATEGORY-facet-header-section label-strong" data-toggle="collapse" data-target="#jrp-entire-CATEGORY-facet-section"
+          aria-expanded="false" role="button" resize-text>
+          Category
+          <i class="facet-arrow glyphicon glyphicon-menu-down hidden-md hidden-lg"></i>
+        </div>
+        <div id="jrp-entire-CATEGORY-facet-section" class="facet-collapsable collapse">
+
+          <div id="desktop_CATEGORY_facets">
+            <a class="caret-facet-item-container " href="/en-US/search?facetcategory=sales">
+              <span class="caret-facet-title" resize-text>
+                sales (186)
+              </span>
+              <span class="caret-facet-accent">
+                >>
+              </span>
+            </a>
+            <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=sales">
+              <span class="caret-facet-title" resize-text>
+                sales (186)
+              </span>
+              <span class="caret-facet-accent">
+                x
+              </span>
+            </a>
+            <a class="caret-facet-item-container " href="/en-US/search?facetcategory=customer%20support">
+              <span class="caret-facet-title" resize-text>
+                customer support (138)
+              </span>
+              <span class="caret-facet-accent">
+                >>
+              </span>
+            </a>
+            <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=customer%20support">
+              <span class="caret-facet-title" resize-text>
+                customer support (138)
+              </span>
+              <span class="caret-facet-accent">
+                x
+              </span>
+            </a>
+            <a class="caret-facet-item-container " href="/en-US/search?facetcategory=engineering">
+              <span class="caret-facet-title" resize-text>
+                engineering (130)
+              </span>
+              <span class="caret-facet-accent">
+                >>
+              </span>
+            </a>
+            <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=engineering">
+              <span class="caret-facet-title" resize-text>
+                engineering (130)
+              </span>
+              <span class="caret-facet-accent">
+                x
+              </span>
+            </a>
+            <a class="caret-facet-item-container " href="/en-US/search?facetcategory=manufacturing%20%26%20operations">
+              <span class="caret-facet-title" resize-text>
+                manufacturing &#38; operations (99)
+              </span>
+              <span class="caret-facet-accent">
+                >>
+              </span>
+            </a>
+            <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=manufacturing%20%26%20operations">
+              <span class="caret-facet-title" resize-text>
+                manufacturing &#38; operations (99)
+              </span>
+              <span class="caret-facet-accent">
+                x
+              </span>
+            </a>
+            <a class="caret-facet-item-container " href="/en-US/search?facetcategory=science">
+              <span class="caret-facet-title" resize-text>
+                science (69)
+              </span>
+              <span class="caret-facet-accent">
+                >>
+              </span>
+            </a>
+            <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=science">
+              <span class="caret-facet-title" resize-text>
+                science (69)
+              </span>
+              <span class="caret-facet-accent">
+                x
+              </span>
+            </a>
+            <a class="caret-facet-item-container " href="/en-US/search?facetcategory=supply%20chain%20%26%20logistics">
+              <span class="caret-facet-title" resize-text>
+                supply chain &#38; logistics (48)
+              </span>
+              <span class="caret-facet-accent">
+                >>
+              </span>
+            </a>
+            <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=supply%20chain%20%26%20logistics">
+              <span class="caret-facet-title" resize-text>
+                supply chain &#38; logistics (48)
+              </span>
+              <span class="caret-facet-accent">
+                x
+              </span>
+            </a>
+            <a class="caret-facet-item-container " href="/en-US/search?facetcategory=marketing">
+              <span class="caret-facet-title" resize-text>
+                marketing (41)
+              </span>
+              <span class="caret-facet-accent">
+                >>
+              </span>
+            </a>
+            <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=marketing">
+              <span class="caret-facet-title" resize-text>
+                marketing (41)
+              </span>
+              <span class="caret-facet-accent">
+                x
+              </span>
+            </a>
+
+            <div id="desktop_CATEGORY_collapsible">
+              <a class="caret-facet-item-container " href="/en-US/search?facetcategory=finance%20%26%20accounting">
+                <span class="caret-facet-title" resize-text>
+                  finance &#38; accounting (40)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=finance%20%26%20accounting">
+                <span class="caret-facet-title" resize-text>
+                  finance &#38; accounting (40)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcategory=quality%20and%20regulatory%20affairs">
+                <span class="caret-facet-title" resize-text>
+                  quality and regulatory affairs (37)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=quality%20and%20regulatory%20affairs">
+                <span class="caret-facet-title" resize-text>
+                  quality and regulatory affairs (37)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcategory=information%20technology">
+                <span class="caret-facet-title" resize-text>
+                  information technology (26)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=information%20technology">
+                <span class="caret-facet-title" resize-text>
+                  information technology (26)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcategory=project%2Fprogram%20management">
+                <span class="caret-facet-title" resize-text>
+                  project/program management (23)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=project%2Fprogram%20management">
+                <span class="caret-facet-title" resize-text>
+                  project/program management (23)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcategory=human%20resources">
+                <span class="caret-facet-title" resize-text>
+                  human resources (14)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=human%20resources">
+                <span class="caret-facet-title" resize-text>
+                  human resources (14)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcategory=continuous%20process%20improvement%20(dbs)">
+                <span class="caret-facet-title" resize-text>
+                  continuous process improvement (dbs) (7)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=continuous%20process%20improvement%20(dbs)">
+                <span class="caret-facet-title" resize-text>
+                  continuous process improvement (dbs) (7)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcategory=environmental%20health%20%26%20safety">
+                <span class="caret-facet-title" resize-text>
+                  environmental health &#38; safety (6)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=environmental%20health%20%26%20safety">
+                <span class="caret-facet-title" resize-text>
+                  environmental health &#38; safety (6)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+
+            </div>
+          </div>
+          <div class="view-facet-btn-container " >
+            <a id="desktop_CATEGORY_collapsed_facet_text"
+            class="view_facet_text collapsed"
+            role="button"
+            data-toggle="collapse"
+            data-target="#desktop_CATEGORY_collapsible"
+            href="">
+            View More
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="desktop-facets">
+      <div onclick="toggleMobileFacets(this)" class="caret-facet-category-header no-pointer LOCATION-facet-header-section label-strong" data-toggle="collapse" data-target="#jrp-entire-LOCATION-facet-section"
+      aria-expanded="false" role="button" resize-text>
+      Location
+      <i class="facet-arrow glyphicon glyphicon-menu-down hidden-md hidden-lg"></i>
+    </div>
+    <div id="jrp-entire-LOCATION-facet-section" class="facet-collapsable collapse">
+
+      <div id="desktop_LOCATION_facets">
+        <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=orange%2Cca">
+          <span class="caret-facet-title" resize-text>
+            Orange, CA (29)
+          </span>
+          <span class="caret-facet-accent">
+            >>
+          </span>
+        </a>
+        <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=orange%2Cca">
+          <span class="caret-facet-title" resize-text>
+            Orange, CA (29)
+          </span>
+          <span class="caret-facet-accent">
+            x
+          </span>
+        </a>
+        <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=indianapolis%2Cin">
+          <span class="caret-facet-title" resize-text>
+            Indianapolis, IN (28)
+          </span>
+          <span class="caret-facet-accent">
+            >>
+          </span>
+        </a>
+        <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=indianapolis%2Cin">
+          <span class="caret-facet-title" resize-text>
+            Indianapolis, IN (28)
+          </span>
+          <span class="caret-facet-accent">
+            x
+          </span>
+        </a>
+        <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=ames%2Cia">
+          <span class="caret-facet-title" resize-text>
+            Ames, IA (25)
+          </span>
+          <span class="caret-facet-accent">
+            >>
+          </span>
+        </a>
+        <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=ames%2Cia">
+          <span class="caret-facet-title" resize-text>
+            Ames, IA (25)
+          </span>
+          <span class="caret-facet-accent">
+            x
+          </span>
+        </a>
+        <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=miami%2Cfl">
+          <span class="caret-facet-title" resize-text>
+            Miami, FL (24)
+          </span>
+          <span class="caret-facet-accent">
+            >>
+          </span>
+        </a>
+        <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=miami%2Cfl">
+          <span class="caret-facet-title" resize-text>
+            Miami, FL (24)
+          </span>
+          <span class="caret-facet-accent">
+            x
+          </span>
+        </a>
+        <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=loveland%2Cco">
+          <span class="caret-facet-title" resize-text>
+            Loveland, CO (23)
+          </span>
+          <span class="caret-facet-accent">
+            >>
+          </span>
+        </a>
+        <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=loveland%2Cco">
+          <span class="caret-facet-title" resize-text>
+            Loveland, CO (23)
+          </span>
+          <span class="caret-facet-accent">
+            x
+          </span>
+        </a>
+        <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=westborough%2Cma">
+          <span class="caret-facet-title" resize-text>
+            Westborough, MA (23)
+          </span>
+          <span class="caret-facet-accent">
+            >>
+          </span>
+        </a>
+        <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=westborough%2Cma">
+          <span class="caret-facet-title" resize-text>
+            Westborough, MA (23)
+          </span>
+          <span class="caret-facet-accent">
+            x
+          </span>
+        </a>
+        <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=carlsbad%2Cca">
+          <span class="caret-facet-title" resize-text>
+            Carlsbad, CA (20)
+          </span>
+          <span class="caret-facet-accent">
+            >>
+          </span>
+        </a>
+        <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=carlsbad%2Cca">
+          <span class="caret-facet-title" resize-text>
+            Carlsbad, CA (20)
+          </span>
+          <span class="caret-facet-accent">
+            x
+          </span>
+        </a>
+
+        <div id="desktop_LOCATION_collapsible">
+          <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=shanghai%2Cshanghai">
+            <span class="caret-facet-title" resize-text>
+              Shanghai, Shanghai (20)
+            </span>
+            <span class="caret-facet-accent">
+              >>
+            </span>
+          </a>
+          <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=shanghai%2Cshanghai">
+            <span class="caret-facet-title" resize-text>
+              Shanghai, Shanghai (20)
+            </span>
+            <span class="caret-facet-accent">
+              x
+            </span>
+          </a>
+          <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=brea%2Cca">
+            <span class="caret-facet-title" resize-text>
+              Brea, CA (19)
+            </span>
+            <span class="caret-facet-accent">
+              >>
+            </span>
+          </a>
+          <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=brea%2Cca">
+            <span class="caret-facet-title" resize-text>
+              Brea, CA (19)
+            </span>
+            <span class="caret-facet-accent">
+              x
+            </span>
+          </a>
+          <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=beijing%2Cbeijing">
+            <span class="caret-facet-title" resize-text>
+              Beijing, Beijing (17)
+            </span>
+            <span class="caret-facet-accent">
+              >>
+            </span>
+          </a>
+          <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=beijing%2Cbeijing">
+            <span class="caret-facet-title" resize-text>
+              Beijing, Beijing (17)
+            </span>
+            <span class="caret-facet-accent">
+              x
+            </span>
+          </a>
+          <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=richmond%2Cva">
+            <span class="caret-facet-title" resize-text>
+              Richmond, VA (17)
+            </span>
+            <span class="caret-facet-accent">
+              >>
+            </span>
+          </a>
+          <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=richmond%2Cva">
+            <span class="caret-facet-title" resize-text>
+              Richmond, VA (17)
+            </span>
+            <span class="caret-facet-accent">
+              x
+            </span>
+          </a>
+          <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=m%C3%BCnchen%2Cbayern">
+            <span class="caret-facet-title" resize-text>
+              M&#252;nchen, Bayern (16)
+            </span>
+            <span class="caret-facet-accent">
+              >>
+            </span>
+          </a>
+          <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=m%C3%BCnchen%2Cbayern">
+            <span class="caret-facet-title" resize-text>
+              M&#252;nchen, Bayern (16)
+            </span>
+            <span class="caret-facet-accent">
+              x
+            </span>
+          </a>
+          <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=berlin%2Cberlin">
+            <span class="caret-facet-title" resize-text>
+              Berlin, Berlin (15)
+            </span>
+            <span class="caret-facet-accent">
+              >>
+            </span>
+          </a>
+          <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=berlin%2Cberlin">
+            <span class="caret-facet-title" resize-text>
+              Berlin, Berlin (15)
+            </span>
+            <span class="caret-facet-accent">
+              x
+            </span>
+          </a>
+          <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=new%20port%20richey%2Cfl">
+            <span class="caret-facet-title" resize-text>
+              New Port Richey, FL (15)
+            </span>
+            <span class="caret-facet-accent">
+              >>
+            </span>
+          </a>
+          <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=new%20port%20richey%2Cfl">
+            <span class="caret-facet-title" resize-text>
+              New Port Richey, FL (15)
+            </span>
+            <span class="caret-facet-accent">
+              x
+            </span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="view-facet-btn-container " >
+        <a id="desktop_LOCATION_collapsed_facet_text"
+        class="view_facet_text collapsed"
+        role="button"
+        data-toggle="collapse"
+        data-target="#desktop_LOCATION_collapsible"
+        href="">
+        View More
+      </a>
+    </div>
+
+  </div>
+</div>
+<div class="desktop-facets">
+  <div onclick="toggleMobileFacets(this)" class="caret-facet-category-header no-pointer COUNTRY-facet-header-section label-strong" data-toggle="collapse" data-target="#jrp-entire-COUNTRY-facet-section"
+  aria-expanded="false" role="button" resize-text>
+  Country
+  <i class="facet-arrow glyphicon glyphicon-menu-down hidden-md hidden-lg"></i>
+</div>
+<div id="jrp-entire-COUNTRY-facet-section" class="facet-collapsable collapse">
+
+  <div id="desktop_COUNTRY_facets">
+    <a class="caret-facet-item-container " href="/en-US/search?facetcountry=us">
+      <span class="caret-facet-title" resize-text>
+        United States (521)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=us">
+      <span class="caret-facet-title" resize-text>
+        United States (521)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcountry=de">
+      <span class="caret-facet-title" resize-text>
+        Germany (79)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=de">
+      <span class="caret-facet-title" resize-text>
+        Germany (79)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcountry=cn">
+      <span class="caret-facet-title" resize-text>
+        China (45)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=cn">
+      <span class="caret-facet-title" resize-text>
+        China (45)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcountry=uk">
+      <span class="caret-facet-title" resize-text>
+        United Kingdom (38)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=uk">
+      <span class="caret-facet-title" resize-text>
+        United Kingdom (38)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcountry=ch">
+      <span class="caret-facet-title" resize-text>
+        Switzerland (26)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=ch">
+      <span class="caret-facet-title" resize-text>
+        Switzerland (26)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcountry=in">
+      <span class="caret-facet-title" resize-text>
+        India (19)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=in">
+      <span class="caret-facet-title" resize-text>
+        India (19)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcountry=ca">
+      <span class="caret-facet-title" resize-text>
+        Canada (17)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=ca">
+      <span class="caret-facet-title" resize-text>
+        Canada (17)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+
+    <div id="desktop_COUNTRY_collapsible">
+      <a class="caret-facet-item-container " href="/en-US/search?facetcountry=dk">
+        <span class="caret-facet-title" resize-text>
+          Denmark (17)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=dk">
+        <span class="caret-facet-title" resize-text>
+          Denmark (17)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcountry=fr">
+        <span class="caret-facet-title" resize-text>
+          France (13)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=fr">
+        <span class="caret-facet-title" resize-text>
+          France (13)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcountry=be">
+        <span class="caret-facet-title" resize-text>
+          Belgium (12)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=be">
+        <span class="caret-facet-title" resize-text>
+          Belgium (12)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcountry=sa">
+        <span class="caret-facet-title" resize-text>
+          Saudi Arabia (9)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=sa">
+        <span class="caret-facet-title" resize-text>
+          Saudi Arabia (9)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcountry=au">
+        <span class="caret-facet-title" resize-text>
+          Australia (8)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=au">
+        <span class="caret-facet-title" resize-text>
+          Australia (8)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcountry=es">
+        <span class="caret-facet-title" resize-text>
+          Spain (6)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=es">
+        <span class="caret-facet-title" resize-text>
+          Spain (6)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcountry=it">
+        <span class="caret-facet-title" resize-text>
+          Italy (6)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcountry=it">
+        <span class="caret-facet-title" resize-text>
+          Italy (6)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+
+    </div>
+  </div>
+  <div class="view-facet-btn-container " >
+    <a id="desktop_COUNTRY_collapsed_facet_text"
+    class="view_facet_text collapsed"
+    role="button"
+    data-toggle="collapse"
+    data-target="#desktop_COUNTRY_collapsible"
+    href="">
+    View More
+  </a>
+</div>
+
+</div>
+</div>
+<div class="desktop-facets">
+  <div onclick="toggleMobileFacets(this)" class="caret-facet-category-header no-pointer COMPANY-facet-header-section label-strong" data-toggle="collapse" data-target="#jrp-entire-COMPANY-facet-section"
+  aria-expanded="false" role="button" resize-text>
+  Company
+  <i class="facet-arrow glyphicon glyphicon-menu-down hidden-md hidden-lg"></i>
+</div>
+<div id="jrp-entire-COMPANY-facet-section" class="facet-collapsable collapse">
+
+  <div id="desktop_COMPANY_facets">
+    <a class="caret-facet-item-container " href="/en-US/search?facetcompany=pall">
+      <span class="caret-facet-title" resize-text>
+        Pall (192)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=pall">
+      <span class="caret-facet-title" resize-text>
+        Pall (192)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcompany=beckman%20diagnostics">
+      <span class="caret-facet-title" resize-text>
+        Beckman Diagnostics (115)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=beckman%20diagnostics">
+      <span class="caret-facet-title" resize-text>
+        Beckman Diagnostics (115)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcompany=leica%20biosystems">
+      <span class="caret-facet-title" resize-text>
+        Leica Biosystems (102)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=leica%20biosystems">
+      <span class="caret-facet-title" resize-text>
+        Leica Biosystems (102)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcompany=kavokerr">
+      <span class="caret-facet-title" resize-text>
+        KaVoKerr (84)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=kavokerr">
+      <span class="caret-facet-title" resize-text>
+        KaVoKerr (84)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcompany=hach">
+      <span class="caret-facet-title" resize-text>
+        Hach (74)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=hach">
+      <span class="caret-facet-title" resize-text>
+        Hach (74)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcompany=sciex">
+      <span class="caret-facet-title" resize-text>
+        SCIEX (60)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=sciex">
+      <span class="caret-facet-title" resize-text>
+        SCIEX (60)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+    <a class="caret-facet-item-container " href="/en-US/search?facetcompany=beckman%20life%20sciences">
+      <span class="caret-facet-title" resize-text>
+        Beckman Life Sciences (52)
+      </span>
+      <span class="caret-facet-accent">
+        >>
+      </span>
+    </a>
+    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=beckman%20life%20sciences">
+      <span class="caret-facet-title" resize-text>
+        Beckman Life Sciences (52)
+      </span>
+      <span class="caret-facet-accent">
+        x
+      </span>
+    </a>
+
+    <div id="desktop_COMPANY_collapsible">
+      <a class="caret-facet-item-container " href="/en-US/search?facetcompany=radiometer">
+        <span class="caret-facet-title" resize-text>
+          Radiometer (48)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=radiometer">
+        <span class="caret-facet-title" resize-text>
+          Radiometer (48)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcompany=nobel%20biocare">
+        <span class="caret-facet-title" resize-text>
+          Nobel Biocare (44)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=nobel%20biocare">
+        <span class="caret-facet-title" resize-text>
+          Nobel Biocare (44)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcompany=chemtreat">
+        <span class="caret-facet-title" resize-text>
+          ChemTreat (28)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=chemtreat">
+        <span class="caret-facet-title" resize-text>
+          ChemTreat (28)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcompany=videojet">
+        <span class="caret-facet-title" resize-text>
+          Videojet (27)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=videojet">
+        <span class="caret-facet-title" resize-text>
+          Videojet (27)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcompany=ormco">
+        <span class="caret-facet-title" resize-text>
+          Ormco (20)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=ormco">
+        <span class="caret-facet-title" resize-text>
+          Ormco (20)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcompany=x-rite%2C%20incorporated">
+        <span class="caret-facet-title" resize-text>
+          X-Rite,  Incorporated (14)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=x-rite%2C%20incorporated">
+        <span class="caret-facet-title" resize-text>
+          X-Rite,  Incorporated (14)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+      <a class="caret-facet-item-container " href="/en-US/search?facetcompany=implant%20direct">
+        <span class="caret-facet-title" resize-text>
+          Implant Direct (11)
+        </span>
+        <span class="caret-facet-accent">
+          >>
+        </span>
+      </a>
+      <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcompany=implant%20direct">
+        <span class="caret-facet-title" resize-text>
+          Implant Direct (11)
+        </span>
+        <span class="caret-facet-accent">
+          x
+        </span>
+      </a>
+
+    </div>
+  </div>
+  <div class="view-facet-btn-container " >
+    <a id="desktop_COMPANY_collapsed_facet_text"
+    class="view_facet_text collapsed"
+    role="button"
+    data-toggle="collapse"
+    data-target="#desktop_COMPANY_collapsible"
+    href="">
+    View More
+  </a>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="col-xs-12 col-md-9 jrp-mobile-table desktop-results-container">
+  <div class="jrp-table-container table-container ">
+    <table id="job-result-table" class="table">
+      <tbody>
+        <tr id="job-result-table-header-table-row" class="hidden-xs">
+          <th class="job-result-header" scope="col">
+            <a id="desktop-job-title-sort" class="label-strong"
+            href="/en-US/search?orderby=title">Job Title</a>
+
+          </th>
+          <th class="job-result-header hidden" scope="col">
+            <a id="desktop-job-company-sort"
+            class="label-strong"
+            href="/en-US/search?orderby=company">Company</a>
+          </th>
+          <th class="job-result-header" scope="col">
+            <a id='desktop-job-location-sort' class="label-strong">Location</a>
+          </th>
+          <th class="job-result-header" scope="col">
+            <a id="desktop-job-date-sort" class="label-strong"
+            href="/en-US/search?orderby=date">Date Posted</a>
+
+          </th>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3J7PX64SX8RM4RP05K" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Panama City, FL</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            18/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/carpenter-shelving-shower-doors-mirrors-hardware-installer/J3F85F6SSLJ1P6MN192" class="primary-text-color job-result-title">Carpenter / Shelving / Shower Doors / Mirrors / Hardware Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Panama City, FL</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            18/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/sales-representative/J3H2YW6F4QPM1PHHHMD" class="primary-text-color job-result-title">Sales Representative</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Tacoma, WA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            16/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3K6CR65TQC0X5ZCFTL" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Norfolk, VA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            16/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/metal-roofer/J3F06J5Y03YRJB83T56" class="primary-text-color job-result-title">Metal Roofer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Stone Mountain, GA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            16/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/test-job-1/J3L1GK6JD13T064NTYW" class="primary-text-color job-result-title">Test Job 1</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">New York, NY</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            16/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/field-supervisor-construction/J3J7116Z1D8742TGXXV" class="primary-text-color job-result-title">Field Supervisor / Construction</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Stone Mountain, GA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            16/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/warehouse-worker/J3L7RH67NPG7771QHZD" class="primary-text-color job-result-title">Warehouse Worker</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Birmingham, AL</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            16/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/warehouse-worker/J3K63K71F6FQ58XXGTQ" class="primary-text-color job-result-title">Warehouse Worker</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Elk River, MN</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            16/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3L7NZ5X3X35370X4YG" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Corpus Christi, TX</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            15/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/spray-foam-insulation-installer/J3J58B6V701JCWYTPRW" class="primary-text-color job-result-title">Spray Foam Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Corpus Christi, TX</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            15/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/weatherization-technician/J3F7PJ6KBL9D98X58RX" class="primary-text-color job-result-title">Weatherization Technician</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Fort Wayne, IN</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            14/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/gutter-installer/J3F0X16C0VGZ4JZ3W11" class="primary-text-color job-result-title">Gutter Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">North Charleston, SC</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            14/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/spray-foam-insulation-installer/J3G4NL6T0K875XKDY1D" class="primary-text-color job-result-title">Spray Foam Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Stone Mountain, GA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            14/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3K60F78JDZ1YLK1YQV" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Tempe, AZ</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            14/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/gutter-installer/J3H7R16KG9ZH36NFGQ9" class="primary-text-color job-result-title">Gutter Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Stone Mountain, GA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            14/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/commerical-garage-door-service-technician/J3J03S6Y3QM43HWM9F5" class="primary-text-color job-result-title">Commerical Garage Door Service Technician</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Indianapolis, IN</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            14/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3H4DM78PZXLW9JVFDC" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Gilroy, CA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            13/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3K4L56207ZY2J264TY" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Azusa, CA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            13/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/gutter-installer/J3K4FW6LXM3QNQ2J7K8" class="primary-text-color job-result-title">Gutter Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Indianapolis, IN</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            12/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/auto-mechanic-warehouse/J3K8CW647JDBDRPMJKN" class="primary-text-color job-result-title">Auto Mechanic / Warehouse</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Elk River, MN</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            12/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/residential-commercial-garage-door-installer/J3H0DG77G5N3K0TDQQD" class="primary-text-color job-result-title">Residential / Commercial Garage Door Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">North Charleston, SC</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            11/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/warehouse-worker-ii/J3F5G2733SPLW3DKWNX" class="primary-text-color job-result-title">Warehouse Worker II</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Schofield, WI</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            11/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/carpenter-shelving-shower-doors-mirrors-hardware-installer-construction/J3L3DF6YTR78CYW931R" class="primary-text-color job-result-title">Carpenter / Shelving / Shower Doors / Mirrors / Hardware Installer / Construction</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">North Charleston, SC</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            11/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/auto-mechanic/J3K67N73H658ZN2Z92J" class="primary-text-color job-result-title">Auto Mechanic</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Crown Point, IN</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/part-time-administrative-assistant/J3J5725YY1V55GZ8DWM" class="primary-text-color job-result-title">Part Time Administrative Assistant</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Washington, UT</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/sales-representative/J3J61B64VV77PX38247" class="primary-text-color job-result-title">Sales Representative</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Visalia, CA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/sales-representative/J3J04N6RH1N6WSK44PT" class="primary-text-color job-result-title">Sales Representative</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Bakersfield, CA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3L7QF6DK71J589Y471" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Ontario, CA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/reporting-coordinator-inventory/J3K2C05Z0FQXMW2N8L1" class="primary-text-color job-result-title">Reporting Coordinator / Inventory</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Columbus, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/sales-representative/J3L43W70LC5RVD3XG87" class="primary-text-color job-result-title">Sales Representative</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Hesperia, CA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/sales-representative/J3G51T749VRV6ZCJZNB" class="primary-text-color job-result-title">Sales Representative</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Fort Collins, CO</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            10/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3F7ZF63L5FP6ZJ8JM5" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Fort Wayne, IN</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            9/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/receptionist/J3H43D782G31N9PS4M7" class="primary-text-color job-result-title">Receptionist</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Hesperia, CA</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            8/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/finish-carpenter/J3H5F96NZBZ2S0XXR55" class="primary-text-color job-result-title">Finish Carpenter</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Mansfield, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            8/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3G87R7755N45JSN7QV" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Mansfield, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            8/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3H0WK6RQD91K51RGXK" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Wintersville, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            8/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3F56073C33Y668S6JF" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Huntsville, AL</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3G2QB73TGWT5WTMB36" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Hardeeville, SC</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3G3MV6XDKNZTSZ7TB9" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Gulfport, MS</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/gutter-installer/J3K28L6Q7T0LYV1XSVN" class="primary-text-color job-result-title">Gutter Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Gulfport, MS</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/fireplace-installer/J3F54K71M89R1VC767Y" class="primary-text-color job-result-title">Fireplace Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Brunswick, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/sales-representative/J3F17R761HDZKZTT520" class="primary-text-color job-result-title">Sales Representative</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">West Palm Beach, FL</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3G09N78K7BLF72WMSC" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Cary, IL</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/gutter-installer/J3G62F6NT8Y7H15ZTBP" class="primary-text-color job-result-title">Gutter Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Hamilton, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3J55K72JG01916TZK6" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Brunswick, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/insulation-installer/J3H19X6PH5RHR8DT9F3" class="primary-text-color job-result-title">Insulation Installer</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Portland, OR</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/administrative-assistant/J3G5506SGJ6KY17QX10" class="primary-text-color job-result-title">Administrative Assistant</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Hamilton, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/carpenter-shelving-shower-doors-mirrors-hardware-installer-construction/J3K4KX6F34HR7GJ24RX" class="primary-text-color job-result-title">Carpenter / Shelving / Shower Doors / Mirrors / Hardware Installer / Construction</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Gulfport, MS</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="^jrp_title_cell-size^ job-result-title-cell">
+            <a href="/en-US/job/residential-commerical-garage-door-service-technician/J3J3KL728WW378D2PQ6" class="primary-text-color job-result-title">Residential/Commerical Garage Door Service Technician</a>
+          </td>
+          <td class="hidden job-result-company-cell">
+            ^company_name^
+          </td>
+          <td class="col-md-4 job-result-location-cell">
+            <div class="job-location-line">Columbus, OH</div><div class="address-line">14225 Dearborn Street, Overland Park, KS, 66223, United States</div>
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            7/8/2017
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+  <div id="jrp-bottom-desktop-pagination"
+  class="row jrp-pagination-row  hidden-xs hidden-sm ">
+  <div class="col-xs-12 col-md-3-offset-3 pull-right">
+    <ul class="pagination">
+      <li class="jrp-desktop-previous-page-element"><a class='previous-page-caret' href='/en-US/search?pagenumber=1'><</a></li>
+
+      <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=1">1</a></li>
+      <li class="active jrp-pagination-number"><a href="/en-US/search?pagenumber=2">2</a></li>
+      <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=3">3</a></li>
+      <li class=" jrp-pagination-number"><a href="">...</a></li>
+      <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=18">18</a></li>
+
+      <li class="jrp-desktop-next-page-element"><a class='next-page-caret' href='/en-US/search?pagenumber=3'>></a></li>
+
+    </ul>
+  </div>
+</div>
+</div>
+<div id="jrp-no-job-results-message" class="hide">
+  <div id="no-jobs-message" class="col-xs-12 col-sm-12">No jobs found using the supplied criteria.</div>
+
+</div>
+</div>
+<div id="jrp-bottom-pagination-row-mobile"
+class="row jrp-pagination-row visible-xs visible-sm hidden-md hidden-lg">
+<div id="previous-mobile-pagination-button"
+class="mobile-pagination bold-font col-xs-6 col-sm-6 ">
+<a class='secondary-button jrp-mobile-pagination-button previous-mobile-page' href='/en-US/search?pagenumber=1'>
+  <span class='mobile-pagination-text'>Back</span>
+</a>
+
+</div>
+<div id="next-mobile-pagination-button" class="mobile-pagination bold-font col-xs-6 col-sm-6 ">
+  <a class='secondary-button jrp-mobile-pagination-button next-mobile-page' href='/en-US/search?pagenumber=3'>
+    <span class='mobile-pagination-text'>Next</span>
+  </a>
+
+</div>
+</div>
+</div>
+<!-- End Jobs results -->
+
+</div>
+</div>
+</div>
+</section>
+<!-- End Internals section -->
+
+
+<!-- Footer -->
+<footer>
+</footer>
+<!-- End Footer -->
+
+<!-- Replace CMS media flag -->
+<script src="js/replaceMedia.js" charset="utf-8"></script>
+<!-- End Replace CMS media flag -->
+</body>
+</html>

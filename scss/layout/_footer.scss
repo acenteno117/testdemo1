@@ -1,0 +1,351 @@
+/// -----------------------------------------------------------------------------
+/// This file contains all styles related to the footer of the site/application.
+/// -----------------------------------------------------------------------------
+
+
+
+
+.not-ready{
+}
+
+footer{
+  background-color: $white;
+  padding-top: 30px;
+}
+
+
+.footer-top{
+  .logo-bottom{
+    text-align: center;
+    padding-bottom: 30px;
+
+    a{
+      display: inline-block;
+    }
+  }
+
+  .footer-menu{
+    background-color: $primary-color;
+    padding-top: 30px;
+
+    ul{
+      list-style: none;
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+
+      li{
+        padding-bottom: 30px;
+
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+.footer-middle{
+  // padding: 40px 0px;
+  padding: 36px 0px;
+  .social-icons {
+    // float: right;
+    ul{
+      li {
+
+        a {
+          .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            // font-size: 36px;
+            font-size: 40px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+          }
+          i{
+            @include on-event{
+              color: #6a7fa1;
+              -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom{
+  background-color: $primary-color;
+
+
+  // .copy {
+  //
+  //   padding-top: 42px;
+  //   a {
+  //     color: $white;
+  //     display: block;
+  //     text-align: center;
+  //     line-height: 0.8;
+  //     margin-bottom: 38px;
+  //     // padding: 12px 0px;
+  //   }
+  //
+  //   p {
+  //     color: $white;
+  //     text-align: center;
+  //     line-height: 20px;
+  //     font-family: helvetica;
+  //     // padding-top: 12px;
+  //     span{
+  //       display: block;
+  //     }
+  //   }
+  //
+  // }
+
+  .copy-list {
+    padding: 15px 0px;
+
+    ul {
+      list-style: none;
+      text-align: center;
+      padding-left: 0;
+
+      li {
+        color: $white;
+        margin: 20px 0px;
+
+        a {
+          color: $white;
+        }
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .footer-top{
+    position: relative;
+
+    .flex-row{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .background-menu{
+      background-color: $primary-color;
+      height: 40px;
+
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      left: 45%;
+    }
+
+    .logo-bottom{
+      text-align: left;
+      padding-bottom: 0px;
+    }
+
+    .footer-menu{
+      background-color: transparent;
+      padding-top: 0px;
+      padding-right: 0px;
+
+      padding-left: 33px;
+
+      ul{
+        text-align: left;
+        line-height: 1.5;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+
+        li{
+          padding-bottom: 0px;
+          display: inline-block;
+
+          &:first-child{
+            position: relative;
+
+            &:before{
+              content: "";
+              background: $primary-color;
+
+              position: absolute;
+              top: 0px;
+              bottom: 0px;
+              left: -50px;
+
+              width: 50px;
+
+              border-top-left-radius: 20px;
+              border-bottom-left-radius: 20px;
+            }
+          }
+
+          a{
+            background-color: $primary-color;
+            padding: 8px 20px;
+            display: inline-block;
+
+            @include on-event{
+              color: $white;
+              background-color: #6a7fa1;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-middle{
+    padding: 0px;
+
+    .social-icons {
+      float: right;
+      margin-bottom: 5px;
+
+    }
+  }
+
+  .footer-bottom .copy-list {
+    ul {
+      li {
+
+
+        color: #fff;
+        margin: 20px 0px;
+        display: inline;
+        padding: 6.5px 35px;
+
+        &:last-child{
+          display: block;
+        }
+
+        &:nth-child(2){
+          border-left: 1px solid $white;
+        }
+        span {
+          display: inline;
+        }
+      }
+    }
+
+  }
+}
+
+@media (min-width: 992px) {
+
+  .footer-top{
+    .footer-menu{
+      padding-left: 77px;
+
+      ul{
+        li{
+          &:first-child{
+            &:before{
+              left: -90px;
+              width: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-middle{
+    // padding: 40px 0px;
+    .social-icons {
+      float: right;
+
+    }
+  }
+
+  .footer-bottom .copy-list {
+    ul {
+      text-align: right;
+      li {
+
+
+        &:last-child{
+          display: inline;
+          border-left: 1px solid $white;
+          padding-right: 0;
+        }
+
+
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .footer-top{
+    .footer-menu{
+      padding-left: 107px;
+    }
+  }
+
+  .footer-middle{
+    // padding: 40px 0px;
+    .social-icons {
+      float: right;
+
+    }
+  }
+
+}
+
+
+/*edit*/
+
+@media (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+
+  /* IE10+ CSS styles go here */
+  .footer-top .footer-menu ul li:first-child:before {
+    left: -85px;
+  }
+
+}
+
+/*end edit*/

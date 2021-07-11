@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at [Company]</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <!-- Internals section -->
+  <section class="internals-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+
+          <!-- After apply view -->
+          <div ng-controller="AfterApply as vm">
+            <div class="animate-show">
+              <div id="job-results">
+                <div id="after-apply-title-container">
+                  <h1 id="after-apply-thank-you-header" class="recommended-job-title">Thank you for your application</h1>
+
+                  <div ng-show="vm.showRecomendedJobs">
+                    <h3 id="after-apply-recommended-header" class="secondary-text-color"> Recommended Jobs Just for You</h3>
+                    <h4 id="after-apply-recommended-subheader"> Based on your recent job application</h4>
+                  </div>
+                </div>
+
+                <div id="after-apply-job-table-container" class="table-container" ng-show="vm.showRecomendedJobs">
+                  <table id="recommendation-table" ng-show="!vm.loading" class="table jrp-table-element">
+                    <tr id="after-apply-job-table-header" class="job-result-header">
+                      <th class="col-md-6 hidden-xs job-table-header-title">Job Title</th>
+                      <th class="col-md-3 hidden-xs job-table-header-location">Location</th>
+                      <th class="col-md-3 hidden-xs job-table-header-date-posted">Date Posted</th>
+                      <th class="hidden-xs">&nbsp;</th>
+                    </tr>
+
+                    <tr class="job-result" ng-repeat="job in vm.jobs" ng-class-even="job-result-even">
+                      <td class="job-rec-link job-table-element-title"><a class="primary-text-color job-result-title" href="{{job.url}}">{{ job.title }}</a></td>
+                      <td class="job-rec-link job-table-element-location">{{ job.location }} </td>
+                      <td class="job-rec-link job-table-element-date">{{ job.date | date:vm.dateFormat}}</td>
+                      <td class="job-rec-link job-table-element-arrow"><a href="{{job.url}}"><span class="glyphicon glyphicon-menu-right"></span></a></td>
+                    </tr>
+                  </table>
+
+                  <div id="after-apply-spinner" class="spinner" ng-show="vm.loading"><img class="loading-gif" ng-src="/public/bravo/img/loading.gif"/></div>
+                </div>
+
+                <div ng-hide="vm.showRecomendedJobs">
+                  <a href="#"
+                  class="primary-button search-jobs-button-404">Search</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End After apply view -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Internals section -->
+
+  <!-- Footer -->
+  <footer>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Replace CMS media flag -->
+  <script src="js/replaceMedia.js" charset="utf-8"></script>
+  <!-- End Replace CMS media flag -->
+</body>
+</html>

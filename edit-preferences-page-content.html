@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at [Company]</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <!-- Internals section -->
+  <section class="internals-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+
+          <!-- Edit preference view -->
+          <div id="edit-preference-view">
+            <div class="editPrefPageContainer container">
+              <div class="content-card">
+                <div class="row" ng-controller="EditPreference as vm">
+                  <div class="col-xs-12">
+
+                    <!-- Header Row -->
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h1 id="edit-preference-title" class="text-uppercase text-center">
+                          Edit your job preferences
+                        </h1>
+                        <br/>
+                      </div>
+                    </div>
+
+                    <!-- Instruction -->
+                    <div class="row">
+                      <div id="edit-preference-instructions" class="col-xs-12 col-sm-8 col-sm-offset-2">
+                        <h3>
+                          These preferences determine the types of job alerts you receive.  Take a moment to update them, so that we can send you emails that match your current needs.<br/>
+                        </h3>
+                      </div>
+                    </div>
+
+                    <hr width="65%">
+
+                    <!-- Form Section -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-8 col-sm-offset-2" name="formContainer">
+                        <form id="edit-preference-form" class="form-group centered" name="editPrefForm" ng-submit="vm.submitNewPreference()">
+
+                          <div id="edit-preference-success-message" ng-show="vm.showSuccess" class="alert alert-success">You have successfully updated your desired job title!
+                          </div>
+
+                          <div id="edit-preference-error-message" ng-show="vm.showError" class="alert alert-danger">Sorry, we could not update your desired job title!
+                          </div>
+
+                          <p id="edit-preference-djt-label">Desired Job Title (e.g. 'nurse' or 'consultant')</p>
+                          <input id="edit-preference-djt-field" class="form-control editPrefFormControl" name="editPrefInputField" type="text" value="vm.desiredJobTitle" ng-model="vm.desiredJobTitle" ng-init="vm.desiredJobTitle = 'engineer';" ng-model-options="{ updateOn : 'default blur' }"/> <br/>
+
+                          <p id="edit-preference-location-label">Location (e.g. '60601' or 'EH209QY)</p>
+                          <input id="edit-preference-location-field" class="form-control editPrefFormControl" name="editPrefLocationInputField" type="text" value="vm.location" ng-model="vm.location" ng-init="vm.location = '30092';" ng-model-options="{ updateOn : 'default blur' }"/> <br/>
+
+                          <input id="edit-preference-update-btn" class="btn btn-default text-uppercase primary-button" type="submit"
+                          value="Update"/>
+
+                          <div class="text-center top-buffer">
+                            <a id="edit-preference-unsubscribe-link" href="#">Unsubscribe</a>
+                          </div>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Edit preference view -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Internals section -->
+
+  <!-- Footer -->
+  <footer>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Replace CMS media flag -->
+  <script src="js/replaceMedia.js" charset="utf-8"></script>
+  <!-- End Replace CMS media flag -->
+</body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at CoWorx</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <!-- Cookies policy bar -->
+  <div id="cookies-policy-bar-section" class="cookies-hide-for-build-development">
+    <div id="cookies-policy-bar" class="primary-color-background-color footer-text-color">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-10 col-sm-11 text-center">
+            This site uses cookies. To find out more, see our
+            <a id="cookies-policy-link" class="footer-text-color" href="^site_language^/en-US/cookie-notice">Cookies Policy</a>
+          </div>
+          <div class="col-xs-2 col-sm-1 text-right">
+            <a id="cookies-policy-bar-dismiss-button" class="tertiary-button" href="">x</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Cookies policy bar -->
+
+  <!-- Header -->
+  <header id="back-top" class="home-header">
+    <!-- Top social -->
+
+    <!-- End Top social -->
+
+    <!-- Top navbar -->
+    <section class="top-navbar">
+
+
+      <!-- Navbar default -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="background-menu">
+
+        </div>
+        <!-- Container -->
+        <div class="container flex-container">
+
+          <!-- Navbar mobile -->
+          <div class="navbar-header">
+            <!-- Navbar toggle (hamburger) -->
+            <button type="button" class="hamburger navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- End Navbar toggle (hamburger) -->
+
+            <!-- Mobile search button -->
+            <button type="button" class="navbar-toggle search-toggle-button-mobile collapsed" data-toggle="collapse" data-target="#SearchBoxMobile" aria-expanded="false" title="Search">
+              <span class="sr-only">Toggle search</span>
+              <i class="fa fa-search"></i>
+            </button>
+            <!-- End Mobile search button -->
+
+            <!-- Logo mobile -->
+            <a href="^site_language^/" class="navbar-brand visible-xs" title="CoWorx Careers" alt="CoWorx Careers">
+              <img src="^media_src_logo-mobile.png^" alt="CoWorx Careers">
+            </a>
+            <!-- End Logo mobile -->
+
+            <!-- Logo desktop -->
+            <a href="^site_language^/" class="navbar-brand hidden-xs" title="CoWorx Careers" alt="CoWorx Careers">
+              <img src="^media_src_logo.png^" alt="CoWorx Careers">
+            </a>
+            <!-- End Logo desktop -->
+          </div>
+          <!-- End Navbar mobile -->
+
+          <!-- Navbar collapse -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <!-- Navbar nav -->
+            <ul class="nav navbar-nav">
+              <!-- Navigation -->
+              <!-- ^navigation^ -->
+              <li class="active">
+                <a href="/" target="">
+                  Home
+                </a>
+              </li>
+              <li class="">
+                <a href="/search" target="">
+                  All Jobs
+                </a>
+              </li>
+
+              <li class="">
+                <a href="/join" target="">
+                  Join Our Talent Network
+                </a>
+              </li>
+              <!-- End Navigation -->
+
+            </ul>
+            <!-- End Navbar nav -->
+          </div>
+          <!-- End Navbar collapse -->
+        </div>
+        <!-- Container -->
+      </nav>
+      <!-- End Navbar default -->
+    </section>
+    <!-- End Top navbar -->
+  </header>
+  <!-- End Header -->
+
+
+
+
+  <!-- Mobile Search -->
+  <div id="SearchBoxMobile" class="search-mobile collapsed" aria-expanded="false">
+    <!-- Search box -->
+    <div class="search-box visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="search-box-content">
+
+              <!-- Search bar -->
+              <!-- ^tmp_elements=search_bar^ -->
+              <div id="search-bar" class="ng-scope">
+                <div class="search-bar-element search-field-container search-bar-location-field">
+                  <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+
+                  <input id="search-keywords-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-pristine ng-untouched ng-valid" placeholder="Job Title or Category">
+
+                  <ul id="keyword-suggestions" class="list-group autocomplete-list suggestions-list ng-hide" role="list">
+                    <li ng-repeat-end="" class="autocompletefooter"></li>
+                  </ul>
+                </div>
+
+                <div class="search-bar-element search-field-container search-location-field">
+                  <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                  <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-valid ng-dirty ng-touched" placeholder="City or Postal Code" >
+
+                  <ul id="suggestions" class="list-group autocomplete-list suggestions-list hide-for-build-development" role="list" >
+                    <li class="blockSpan list-group-item ng-binding ng-scope" >Miami, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope active" >Miami Beach, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope" >Miami Gardens, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope">Miami Lakes, FL, USA</li>
+                    <li class="blockSpan list-group-item ng-binding ng-scope">Miami, OK, USA</li>
+
+                    <li class="autocompletefooter ng-scope"><img src="public/cms_base/img/powered_by_google_on_white.png" align="right" class="google-footer"></li>
+                  </ul>
+                </div>
+
+                <div class="search-bar-element search-field-container search-location-field ng-hide">
+                  <label id="lblmultilocation" for="search-location-field_multi" class="hidden-xs search-bar-location-label label-text">Locations (up to 3):</label>
+
+                  <div class="ui-select-container ui-select-multiple ui-select-bootstrap dropdown form-control ng-valid" id="search-location-field_multi" limit="3" reset-search-input="true" sortable="true" close-on-select="false">
+                    <div>
+                      <span class="ui-select-match" id="suggestions_multi" placeholder="City or Postal Code"></span>
+                      <input type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="ui-select-search input-xs ng-pristine ng-untouched ng-valid" placeholder="City or Postal Code" role="combobox" aria-expanded="false" aria-label="Select box" ondrop="return false;" style="width: 10px;">
+                    </div>
+
+                    <ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide">
+                      <li class="ui-select-choices-group" id="ui-select-choices-1">
+                        <div class="divider ng-hide"></div>
+                        <div class="ui-select-choices-group-label dropdown-header ng-binding ng-hide"></div>
+                      </li>
+                    </ul>
+
+                    <div class="ui-select-no-choice"></div>
+                    <ui-select-multiple></ui-select-multiple>
+                  </div>
+                </div>
+
+                <div class="search-bar-element search-widget-container">
+                  <a id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text" href="^site_language^/en-US/search">Search</a>
+                </div>
+              </div>
+              <!-- End Search bar -->
+
+              <!-- View all jobs -->
+              <div class="link-center">
+                <a href="^site_language^/search" class="view-all-jobs" title="View All Jobs at CoWorx">View All Jobs at CoWorx</a>
+              </div>
+              <!-- End View all jobs -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Search box -->
+  </div>
+  <!-- End Mobile Search -->
+
+  <!-- Home banner -->
+  <section class="home-banner">
+    <div class="search-container">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+            <!-- Desktop Search -->
+            <div class="search-desktop-home hidden-xs">
+              <!-- Search box -->
+              <div class="search-box">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="search-box-content">
+
+                        <!-- Search bar -->
+                        <!-- ^tmp_elements=search_bar^ -->
+                        <div id="search-bar" class="ng-scope">
+                          <div class="search-bar-element search-field-container search-bar-location-field">
+                            <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+
+                            <input id="search-keywords-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-pristine ng-untouched ng-valid" placeholder="Job Title or Category">
+
+                            <ul id="keyword-suggestions" class="list-group autocomplete-list suggestions-list ng-hide" role="list">
+                              <li ng-repeat-end="" class="autocompletefooter"></li>
+                            </ul>
+                          </div>
+
+                          <div class="search-bar-element search-field-container search-location-field">
+                            <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+                            <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-valid ng-dirty ng-touched" placeholder="City or Postal Code" >
+
+                            <ul id="suggestions" class="list-group autocomplete-list suggestions-list hide-for-build-development" role="list" >
+                              <li class="blockSpan list-group-item ng-binding ng-scope" >Miami, FL, USA</li>
+                              <li class="blockSpan list-group-item ng-binding ng-scope active" >Miami Beach, FL, USA</li>
+                              <li class="blockSpan list-group-item ng-binding ng-scope" >Miami Gardens, FL, USA</li>
+                              <li class="blockSpan list-group-item ng-binding ng-scope">Miami Lakes, FL, USA</li>
+                              <li class="blockSpan list-group-item ng-binding ng-scope">Miami, OK, USA</li>
+
+                              <li class="autocompletefooter ng-scope"><img src="public/cms_base/img/powered_by_google_on_white.png" align="right" class="google-footer"></li>
+                            </ul>
+                          </div>
+
+                          <div class="search-bar-element search-field-container search-location-field ng-hide">
+                            <label id="lblmultilocation" for="search-location-field_multi" class="hidden-xs search-bar-location-label label-text">Locations (up to 3):</label>
+
+                            <div class="ui-select-container ui-select-multiple ui-select-bootstrap dropdown form-control ng-valid" id="search-location-field_multi" limit="3" reset-search-input="true" sortable="true" close-on-select="false">
+                              <div>
+                                <span class="ui-select-match" id="suggestions_multi" placeholder="City or Postal Code"></span>
+                                <input type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="ui-select-search input-xs ng-pristine ng-untouched ng-valid" placeholder="City or Postal Code" role="combobox" aria-expanded="false" aria-label="Select box" ondrop="return false;" style="width: 10px;">
+                              </div>
+
+                              <ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide">
+                                <li class="ui-select-choices-group" id="ui-select-choices-1">
+                                  <div class="divider ng-hide"></div>
+                                  <div class="ui-select-choices-group-label dropdown-header ng-binding ng-hide"></div>
+                                </li>
+                              </ul>
+
+                              <div class="ui-select-no-choice"></div>
+                              <ui-select-multiple></ui-select-multiple>
+                            </div>
+                          </div>
+
+                          <div class="search-bar-element search-widget-container">
+                            <a id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text" href="^site_language^/en-US/search">Search</a>
+                          </div>
+                        </div>
+                        <!-- End Search bar -->
+
+                        <!-- View all jobs -->
+                        <div class="link-center">
+                          <a href="^site_language^/search" class="view-all-jobs" title="View All Jobs at CoWorx">View All Jobs at CoWorx</a>
+                        </div>
+                        <!-- End View all jobs -->
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Search box -->
+            </div>
+            <!-- End Desktop Search -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Home banner -->
+
+<!-- together home -->
+  <section class="together-home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-5 col-md-push-7  col-lg-6 col-lg-push-6">
+          <div class="together-text">
+            <h2>Together <span>we're better</span></h2>
+
+            <p>Welcome to CoWorx Staffing. We thank you for choosing our team of caring, supportive and highly trained professionals to help you find your next opportunity. We know that you need to find work quickly. With over 45 years of experience and 90 locations we have connections with hundreds of companies that are hiring now.  Our team will lead you through every step of the process to help you find the right job and employer.</p>
+            <p>Start your search now!</p>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-7 col-md-pull-5 col-lg-6 col-lg-pull-6">
+          <div class="img-sidebar">
+            <img src="img/sidebar.png" alt="CoWorx-image" class="img-responsive">
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- end together home -->
+
+  <!-- section home_jobs -->
+  <section class="home_jobs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="home-galery">
+            <div class="image-container">
+              <img src="img/img-home1.png" alt="CoWorx-image" class="img-responsive">
+
+              <div class="overlay-container">
+                <h2>Trained <span>Professionals</span></h2>
+              </div>
+
+            </div>
+            <div class="text-container">
+              <p>CoWorx has the best-trained staff in the industry. More than half of our branch staff is certified by the American Staffing Association. You will find our Recruiters to be courteous, friendly, and best of all skillful at matching you to the right job!</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="home-galery">
+            <div class="image-container">
+              <img src="img/img-home2.png" alt="CoWorx-image" class="img-responsive">
+              <div class="overlay-container">
+                <h2>Temporary <span>Staffing</span></h2>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>CoWorx provides quality temporary staffing for our clients ranging from small, mid size, to fortune 500 companies. Working as a temporary employee is a great opportunity to get your foot in the door or gain valuable work experience. Earn money while you build your skills, experience, and resume.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="home-galery">
+            <div class="image-container">
+              <img src="img/img-home3.png" alt="CoWorx-image" class="img-responsive">
+              <div class="overlay-container">
+                <h2 class="direct-text">Direct Hire</h2>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>Direct hire with the CoWorx Search Group is a win-win solution, specializing in the recruitment and placement of professional, technical and administrative personnel. We are committed to providing our clients and candidates with seasoned professionals who will dedicate themselves to providing the utmost in personal attention, professionalism and integrity.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- end section home_jobs -->
+
+  <!-- benefits section -->
+  <section class="benefits-home">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <div class="top-benefits">
+            <h2>Top Notch <span>Benefits</span></h2>
+            <p>CoWorx offers one of the best packages of optional benefits in the temporary industry:</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-2">
+          <div class="benefits-center">
+
+            <div class="home-benefits-icon">
+              <div class="img-benefits">
+                <img src="img/icon-free.png" alt="icon-free" class="img-responsive">
+              </div>
+              <div class="text-benefits">
+                <p><b>Free Training</b></p>
+                <p>Access to the CoWorx Staffing Iniversity with hundreds of courses available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="benefits-center">
+
+
+            <div class="home-benefits-icon">
+              <div class="img-benefits">
+                <img src="img/icon-401.png" alt="icon-401" class="img-responsive">
+              </div>
+              <div class="text-benefits">
+                <p><b>401(K)</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-2">
+          <div class="benefits-center">
+
+
+            <div class="home-benefits-icon">
+              <div class="img-benefits">
+                <img src="img/icon-health.png" alt="icon-health" class="img-responsive">
+              </div>
+              <div class="text-benefits">
+                <p><b>*Health, vision, dental, life, and disability insurance for you and your family</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="benefits-center">
+
+
+            <div class="home-benefits-icon">
+              <div class="img-benefits">
+                <img src="img/icon-credit.png" alt="icon-credit" class="img-responsive">
+              </div>
+              <div class="text-benefits">
+                <p><b>Credit Union</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-2">
+          <div class="benefits-center">
+
+            <div class="home-benefits-icon">
+              <div class="img-benefits">
+                <img src="img/icon-payroll.png" alt="icon-payroll" class="img-responsive">
+              </div>
+              <div class="text-benefits">
+                <p><b>*Payroll Debit Card</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="benefits-center">
+
+            <div class="home-benefits-icon">
+              <div class="img-benefits">
+                <img src="img/icon-holiday.png" alt="icon-holiday" class="img-responsive">
+              </div>
+              <div class="text-benefits">
+                <p><b>Holiday Bonus</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-2">
+          <div class="benefits-center">
+
+            <div class="home-benefits-icon">
+              <div class="img-benefits">
+                <img src="img/icon-direct.png" alt="icon-direct" class="img-responsive">
+              </div>
+              <div class="text-benefits">
+                <p><b>Direct Deposit</b></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="button-benefits">
+            <p>*Not all states are eligible; contact <span>your local branch for more information</span></p>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+  <!-- end benefits section -->
+
+  <!-- section Not Ready -->
+  <section class="not-ready">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="not-ready-text">
+            <h2>Not Ready <span> To Apply?</span></h2>
+            <p>If you’re interested in career opportunities, but not ready to apply, join our Talent Network to stay connected to us and receive updates on the latest job opportunities and company news.</p>
+            <div class="not-ready-join">
+              <a href="/join" title="join" class="btn btn-join jf-btn"> Join Our Talent Network</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End section Not Ready -->
+
+  <!-- Footer -->
+  <footer>
+    <!-- navigation footer -->
+    <section class="footer-top">
+      <div class="background-menu"></div>
+
+      <div class="container">
+        <div class="row flex-row">
+          <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+            <!-- Logo -->
+            <div class="logo-bottom">
+              <a href="^site_language^/" title="CoWorx Careers" alt="CoWorx Careers">
+                <img src="^media_src_logo.png^"  class="img-responsive" alt="CoWorx Careers">
+              </a>
+            </div>
+            <!-- End Logo -->
+          </div>
+
+          <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 footer-menu">
+            <!-- Navigation footer -->
+            <ul>
+              <li><a href="^site_language^/" target="">Home</a></li>
+              <li><a href="^site_language^/search" target="">All Jobs</a></li>
+              <li><a href="^site_language^/join" title="Join Our Talent Network">Join Our Talent Network</a></li>
+            </ul>
+            <!-- End Navigation footer -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end navigation footer -->
+
+    <!-- social media -->
+    <section class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-sm-offset-9 col-md-2 col-md-offset-10">
+            <div class="social-icons">
+              <ul class="list-inline social-items">
+                <li>
+                  <a href="https://www.facebook.com/coworxstaffingservices/?ref=bookmarks" class="" target="_blank" title="Facebook">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/coworx-staffing-services" class="" target="_blank" title="LinkedIn">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/CoWorxStaffingServ" class="" target="_blank" title="Youtube">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End social media -->
+
+    <!-- section Copy -->
+    <section class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+
+            <div class="copy-list">
+              <ul>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-and-condition">Terms & Conditions</a></li>
+                <li>© 2019 CoWorx Staffing. <span>All Rights Reserved.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section Copy -->
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Replace CMS media flag -->
+  <script src="js/replaceMedia.js" charset="utf-8"></script>
+  <!-- End Replace CMS media flag -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at [Company]</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <div id="search-widget">
+    <!-- Search bar -->
+    <div id="search-bar" class="ng-scope">
+      <div class="search-bar-element search-field-container search-bar-location-field">
+        <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+
+        <input id="search-keywords-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-pristine ng-untouched ng-valid" placeholder="Job Title or Category">
+
+        <ul id="keyword-suggestions" class="list-group autocomplete-list suggestions-list ng-hide" role="list">
+          <li ng-repeat-end="" class="autocompletefooter"></li>
+        </ul>
+      </div>
+
+      <div class="search-bar-element search-field-container search-location-field">
+        <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+
+        <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field  ng-valid ng-dirty ng-touched" placeholder="City or Postal Code" >
+
+        <ul id="suggestions" class="list-group autocomplete-list suggestions-list" role="list" >
+          <li class="blockSpan list-group-item ng-binding ng-scope" >Miami, FL, USA</li>
+          <li class="blockSpan list-group-item ng-binding ng-scope active" >Miami Beach, FL, USA</li>
+          <li class="blockSpan list-group-item ng-binding ng-scope" >Miami Gardens, FL, USA</li>
+          <li class="blockSpan list-group-item ng-binding ng-scope">Miami Lakes, FL, USA</li>
+          <li class="blockSpan list-group-item ng-binding ng-scope">Miami, OK, USA</li>
+
+          <li class="autocompletefooter ng-scope"><img src="public/cms_base/img/powered_by_google_on_white.png" align="right" class="google-footer"></li>
+        </ul>
+      </div>
+
+      <div class="search-bar-element search-field-container search-location-field ng-hide">
+        <label id="lblmultilocation" for="search-location-field_multi" class="hidden-xs search-bar-location-label label-text">Locations (up to 3):</label>
+
+        <div class="ui-select-container ui-select-multiple ui-select-bootstrap dropdown form-control ng-valid" id="search-location-field_multi" limit="3" reset-search-input="true" sortable="true" close-on-select="false">
+          <div>
+            <span class="ui-select-match" id="suggestions_multi" placeholder="City or Postal Code"></span>
+            <input type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="ui-select-search input-xs ng-pristine ng-untouched ng-valid" placeholder="City or Postal Code" role="combobox" aria-expanded="false" aria-label="Select box" ondrop="return false;" style="width: 10px;">
+          </div>
+
+          <ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide">
+            <li class="ui-select-choices-group" id="ui-select-choices-1">
+              <div class="divider ng-hide"></div>
+              <div class="ui-select-choices-group-label dropdown-header ng-binding ng-hide"></div>
+            </li>
+          </ul>
+
+          <div class="ui-select-no-choice"></div>
+          <ui-select-multiple></ui-select-multiple>
+        </div>
+      </div>
+
+      <div class="search-bar-element search-widget-container">
+        <a id="primary-search-button" target="_top" class="search-btn primary-button text-center label-text" href="^site_language^/en-US/search">Search</a>
+      </div>
+    </div>
+    <!-- End Search bar -->
+  </div>
+
+  <!-- Replace CMS media flag -->
+  <script src="js/replaceMedia.js" charset="utf-8"></script>
+  <!-- End Replace CMS media flag -->
+</body>
+</html>

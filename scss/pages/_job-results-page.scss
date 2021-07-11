@@ -1,0 +1,888 @@
+/// -----------------------------------------------------------------------------
+/// This file contains styles that are specific to the job results page (JRP).
+/// -----------------------------------------------------------------------------
+
+/// BREADCRUMB -> JOB RESULTS PAGE CONTENT, JOB DETAILS PAGE CONTENT & BROWSE BY PAGE CONTENT
+.breadcrumb{
+  border-radius: 0px; /// <- Always
+  border: none; /// <- Always
+  margin-bottom: 10px;
+  background-color: transparent;
+
+  /// Breadcrumb items
+  >li{
+    &.active, &, a{
+      color: $text-color;
+    }
+
+    /// Only for Search and Re-engage
+
+    // &:first-child{
+    //   position: relative;
+    //
+    //   a{
+    //     pointer-events: none;
+    //     cursor: default;
+    //   }
+    //
+    //   &:before{
+    //     content: "";
+    //     position: absolute;
+    //     top: 0px;
+    //     bottom: 0px;
+    //     left: 0px;
+    //     right: 0px;
+    //     z-index: 1;
+    //     background-color: transparent;
+    //   }
+    // }
+
+    /// End Only for Search and Re-engage
+
+    /// Breadcrumb items separator (/)
+    +li:before{
+      padding: 0 5px;
+      color: $text-color;
+      content: "/\00a0";
+    }
+    /// End Breadcrumb items separator (/)
+
+    &:last-child{
+      &, a{
+      }
+    }
+  }
+  /// End Breadcrumb items
+}
+/// END BREADCRUMB -> JOB RESULTS PAGE CONTENT, JOB DETAILS PAGE CONTENT & BROWSE BY PAGE CONTENT
+
+
+/// PAGINATION
+.pagination{
+  /// Pagination items
+  >li{
+    text-align: center;
+
+    /// Pagination item
+    >a, >span, &:last-child>a, &:last-child>span, &:first-child>a, &:first-child>span{
+      border-radius: 0px; /// <- Set to 100% to turn it into a circle
+      color: $fourth-color;
+      background-color: transparent;
+
+      line-height: 35px;
+      height: 35px;
+      width: 35px;
+      padding: 0px;
+
+      @include on-event{
+        color: $white;
+        background-color: $hover-color;
+      }
+    }
+    /// End Pagination item
+
+    /// Pagination item activated
+    &.active{
+      >a{
+        color: $white;
+        background-color: $hover-color;
+
+        @include on-event{
+          background-color: shade($hover-color, 15%);
+        }
+      }
+    }
+    /// End Pagination item activated
+
+    /// ... Pagination
+    >a[href=""]{
+      pointer-events: none;
+      cursor: default;
+    }
+    /// End ... Pagination
+
+    /// Previous caret icon
+    .previous-page-caret{
+      font-size: 0px;
+
+      &:before{
+        content: "\f0d9";
+        font-size: 22px;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+      }
+    }
+    /// End Previous caret icon
+
+    /// Next caret icon
+    .next-page-caret{
+      font-size: 0px;
+
+      &:after{
+        content: "\f0da";
+        font-size: 22px;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+      }
+    }
+    /// End Next caret icon
+  }
+  /// End Pagination items
+}
+/// END PAGINATION
+
+
+/// SIGN UP FOR JOB ALERTS EMAILS CONTENT -> JOB RESULTS PAGE CONTENT & BROWSE BY PAGE CONTENT
+
+/// Sign Up For Job Alert Emails text
+#sign-up-widget{
+  color: #000;
+  font-size: $body-font-size;
+  font-weight: normal;
+  text-transform: capitalize; /// <- Always
+
+  /// Envelope icon
+  .fa-envelope-o{
+    color: $white;
+    background-color: $primary-color;
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 12px;
+    border-radius: 100%;
+  }
+  /// End Envelope icon
+}
+/// End Sign Up For Job Alert Emails text
+
+/// END SIGN UP FOR JOB ALERTS EMAILS CONTENT -> JOB RESULTS PAGE CONTENT & BROWSE BY PAGE CONTENT
+
+
+/// MOBILE SORT JOBS
+.mobile-sort-jobs{
+  padding-bottom: 20px;
+
+  /// Jobs sorted by
+  .mobile-job-count-message{
+    font-size: $body-font-size;
+    text-align: center;
+    display: block;
+  }
+  /// End Jobs sorted by
+
+  /// Jobs sorted by dropdown
+  .mobile-dropdown-sort{
+    margin-top: 10px;
+
+    #mobile-sort-title{
+      color: $text-color;
+    }
+
+    /// Sorted by list
+    ul{
+      margin: 0px;
+
+      li{
+        padding: 0px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        a{
+          color: $text-color;
+          padding: 10px;
+        }
+
+        @include on-event{
+          background-color: $hover-color;
+
+          a{
+            color: $white;
+          }
+        }
+      }
+    }
+    /// End Sorted by list
+  }
+  /// End Jobs sorted by dropdown
+}
+/// END MOBILE SORT JOBS
+
+
+/// JOBS COUNT TITLE
+.search-results-title{
+  @extend .internals-titles;
+
+  text-align: left;
+  padding-bottom: 0px;
+  // text-transform: capitalize;
+
+  /// Title without CMS flag
+
+  // .jrp-jobs-count{
+  //   display: block;
+  //   font-weight: bold;
+  // }
+  //
+  // .jrp-job-company{
+  // }
+
+  /// End Title without CMS flag
+}
+/// END JOBS COUNT TITLE
+
+
+/// Table and facets container
+#jrp-desktop-table, #recommendation-table{
+  padding-top: 20px;
+}
+/// End Table and facets container
+
+
+/// FACETS
+
+/// Facets container
+#jrp-desktop-facet-col{
+  background-color: transparent;
+
+  /// Facets container
+  #desktop-facets-container{
+    background-color: transparent;
+
+    /// Narrow search button
+    #narrow-search-header{
+      font-weight: bold;
+      text-transform: uppercase;
+
+      font-size: 1.22em;
+
+      color: $white;
+      background-color: $facets-color;
+
+      width: 100%;
+      margin-bottom: 20px;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      @include on-event{
+        background-color: shade($facets-color, 15%);
+      }
+    }
+    /// End Narrow search button
+
+    /// Facets body
+    #desktop-facets-body{
+      background-color: transparent;
+
+      /// Full facets
+      @if $full-facet{
+        background-color: $facets-color;
+
+      }
+      /// End Full facets
+
+      /// Facets items
+      .desktop-facets{
+        padding-bottom: 0px;
+
+        &:first-child{
+          /// If rounded facets
+          @if $rounded-facet{
+            /// Facet header
+            .caret-facet-category-header{
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+
+            }
+            /// End Facet header
+          }
+          @else{
+            /// Facet header
+            .caret-facet-category-header{
+              border-top-left-radius: 0px;
+              border-top-right-radius: 0px;
+            }
+            /// End Facet header
+          }
+          /// End If rounded facets
+        }
+
+        &:last-child{
+          padding-bottom: 15px;
+
+          /// If rounded facets
+          @if $rounded-facet{
+            /// Facet header
+            .caret-facet-category-header{
+              border-bottom-left-radius: 5px;
+              border-bottom-right-radius: 5px;
+
+            }
+            /// End Facet header
+          }
+          @else{
+            /// Facet header
+            .caret-facet-category-header{
+              border-bottom-left-radius: 0px;
+              border-bottom-right-radius: 0px;
+            }
+            /// End Facet header
+          }
+          /// End If rounded facets
+        }
+
+        /// Full facets
+        @if $full-facet{
+          border-left: 15px solid $facets-color;
+          border-right: 15px solid $facets-color;
+        }
+        /// End Full facets
+
+        /// Facet header
+        .caret-facet-category-header{
+          font-weight: bold;
+          text-transform: uppercase;
+
+          font-size: 1.22em;
+
+          color: $white;
+          background-color: $facets-color;
+
+          text-align: left;
+          width: 100%;
+          margin: 0px;
+          padding: 10px 0px 10px 22px;
+
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+          @include on-event{
+            background-color: shade($facets-color, 15%);
+          }
+
+          /// Mobile facet arrow
+          .facet-arrow{
+            color: $white;
+            font-size: 18px;
+          }
+          /// End Mobile facet arrow
+        }
+        /// End Facet header
+
+        /// Facets items
+        .caret-facet-item-container{
+          font-weight: normal;
+          font-size: $body-font-size;
+          color: $text-color;
+
+          border: 1px solid $grey;
+          border-top: none;
+          padding: 8px 22px;
+          width: 100%;
+
+          background-color: transparent;
+
+          /// Full facets
+          @if $full-facet{
+            background-color: $body-color;
+          }
+          /// End Full facets
+
+          &:first-child{
+            border-top: 1px solid $grey;
+          }
+
+          /// Facet items text
+          a, span{
+            text-transform: capitalize; /// <- Always
+          }
+          /// End Facet items text
+
+          /// Item caret >>
+          .caret-facet-accent{
+            color: $text-color;
+
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+          }
+          /// End Item caret >>
+
+          /// Facets item hover, focus, active
+          @include on-event{
+            color: $text-color;
+            background-color: tint($hover-color, 90%);
+
+            .caret-facet-accent{
+              color: $text-color;
+            }
+          }
+          /// End Facets item hover, focus, active
+        }
+        /// End Facets items
+
+        /// Selected facet item
+        .selected-caret-facet-item-container{
+          color: $hover-color;
+
+          width: 100%;
+          margin: 0px;
+          background-color: transparent;
+          border: 1px solid $grey;
+        }
+        /// End Selected facet item
+      }
+      /// End Facets items
+
+      /// View more and view less button container
+      .view-facet-btn-container{
+        font-weight: normal;
+
+        background-color: transparent;
+        border: 1px solid $grey;
+        border-top: none;
+        text-align: center;
+        padding: 5px 0px;
+        width: 100%;
+        margin: 0px;
+
+        /// View + - container border radius
+
+        // border-bottom-left-radius: 5px;
+        // border-bottom-right-radius: 5px;
+
+        /// End View + - container border radius
+
+        /// Full facets
+        @if $full-facet{
+          border: none;
+          padding-top: 10px;
+          background-color: $facets-color;
+        }
+        /// End Full facets
+
+        /// + View more button
+        .view_facet_text{
+          color: $text-color;
+
+          font-family: $primary-font;
+          font-size: $body-font-size;
+          font-weight: normal;
+
+          @include on-event{
+            text-decoration: underline;
+          }
+
+          &.collapsed{
+            /// Plus icon +
+            &:after{
+              content: ' +';
+
+              /// Full facets
+              @if $full-facet{
+                display: none;
+              }
+              /// End Full facets
+            }
+            /// End Plus icon +
+          }
+
+          /// Less icon -
+          &:after{
+            content: ' -';
+
+            /// Full facets
+            @if $full-facet{
+              display: none;
+            }
+            /// End Full facets
+          }
+          /// End Less icon -
+        }
+        /// End + View more button
+      }
+      /// End View more and view less button container
+    }
+    /// End Facets body
+  }
+  /// End Facets container
+}
+/// End Facets container
+
+/// END FACETS
+
+
+/// JOB RESULTS TABLE
+
+/// Table
+#job-result-table, #recommendation-table{
+  margin-bottom: 0px;
+
+  /// Table header container
+  #job-result-table-header-table-row, #after-apply-job-table-header{
+    border-bottom: 2px solid $facets-color;
+  }
+  /// End Table header container
+
+  /// Table header
+  .job-result-header{
+    font-size: 1.22em;
+    line-height: 1.3;
+
+    padding: 8px;
+    min-width: 165px;
+    background-color: transparent;
+
+    /// Full facets
+    @if $full-facet{
+      background-color: $facets-color;
+    }
+    /// End Full facets
+
+    /// Table header titles
+    a, span, .job-table-header-title, .job-table-header-location, .job-table-header-date-posted{
+      font-weight: bold;
+      text-transform: uppercase;
+
+      color: $facets-title;
+
+      display: inline-block;
+
+      @include on-event{
+        text-decoration: none;
+      }
+    }
+    /// End Table header titles
+
+    /// Remove pointer from Location column
+    #desktop-job-location-sort, .job-table-header-location{
+      pointer-events: none;
+      cursor: default;
+    }
+    /// End Remove pointer from Location column
+
+    /// After Apply - Recomendation table header titles
+    .job-table-header-title, .job-table-header-location, .job-table-header-date-posted{
+      display: table-cell;
+    }
+    /// End After Apply - Recomendation table header titles
+
+    /// Table header sort icon
+    .glyphicon-menu-down, .glyphicon-menu-up{
+      color: $facets-color;
+    }
+    /// End Table header sort icon
+  }
+  /// End Table header
+
+  /// Job result row
+  .job-result{
+    font-size: $body-font-size;
+    border-top: solid 1px $grey;
+
+    /// Job result row item
+    td{
+      /// Job title
+      .job-result-title{
+        font-weight: bold;
+        color: $facets-title;
+
+        @include on-event{
+          background-color: transparent;
+          text-decoration: none;
+        }
+      }
+      /// End Job title
+
+      /// Job company, job location & job date posted
+      &, &.job-result-company-cell, &.job-result-location-cell, &.job-result-date-posted-cell{
+        /// Job company, job location, job date posted & Street address
+        &, .address-line{
+          color: $text-color;
+        }
+        /// End Job company, job location, job date posted & Street address
+
+        /// Street address
+        .address-line{
+          display: table-cell;
+        }
+        /// End Street address
+      }
+      /// End Job company, job location & job date posted
+
+      ///  After Apply - Recomendation table arrow
+      &.job-table-element-arrow{
+        a{
+          @include on-event (true){
+            color: $facets-title;
+          }
+        }
+      }
+      /// End  After Apply - Recomendation table arrow
+    }
+    /// End Job result row item
+
+    /// Job result row hover, focus, active
+    @include on-event{
+      background-color: tint($hover-color, 90%);
+
+      /// Full facets
+      @if $full-facet{
+        background-color: tint($hover-color, 90%);
+      }
+      /// End Full facets
+
+      /// Job title
+      td{
+        .job-result-title{
+          // color: $white;
+        }
+        /// End Job title
+
+        /// Job company, job location & job date posted
+        &, &.job-result-company-cell, &.job-result-location-cell, &.job-result-date-posted-cell{
+          &, .address-line{
+            // color: $white;
+          }
+        }
+        /// End Job company, job location & job date posted
+
+        ///  After Apply - Recomendation table arrow
+        &.job-table-element-arrow{
+          a{
+            @include on-event (true){
+              // color: $white;
+            }
+          }
+        }
+        /// End  After Apply - Recomendation table arrow
+      }
+    }
+    /// End Job result row hover, focus, active
+  }
+  /// End Job result row
+}
+/// End Table
+
+/// No jobs message
+#no-jobs-message{
+  text-align: center;
+  padding: 30px 15px;
+}
+/// End No jobs message
+
+/// END JOB RESULTS TABLE
+
+
+/// BACK & NEXT PAGE MOBILE BUTTONS
+
+/// Back & next buttons container
+.jrp-pagination-row{
+  padding-bottom: 0px;
+
+  .mobile-pagination{
+    text-align: center;
+
+    /// Back & next buttons
+    .next-mobile-page,
+    .previous-mobile-page{
+      @extend .internals-buttons;
+
+      @include on-event{
+        opacity: 1;
+      }
+    }
+    /// End Back & next buttons
+  }
+}
+/// End Back & next buttons container
+
+/// END BACK & NEXT PAGE MOBILE BUTTONS
+
+/// Job results page and FP
+#job-results-page-main-content{
+}
+/// End Job results page and FP
+
+@media (min-width: 992px) {
+
+  /// Facet header & table header
+  #jrp-desktop-facet-col .caret-facet-category-header, #job-result-table .job-result-header, #recommendation-table .job-result-header{
+    padding: 10px 8px;
+
+    &, a, span, .job-table-header-title, .job-table-header-location, .job-table-header-date-posted{
+      // font-size: 18px;
+    }
+  }
+  /// End Facet header & table header
+
+
+  /// FACETS
+
+  /// Facets container
+  #jrp-desktop-facet-col{
+    /// Facets container
+    #desktop-facets-container{
+      /// Narrow search button
+      #narrow-search-header{
+        display: none;
+      }
+      /// End Narrow search button
+
+      /// Facets body
+      #desktop-facets-body{
+        margin-top: 0px;
+
+        /// Full facets
+        @if $full-facet{
+          border-left: 15px solid $facets-color;
+          border-right: 15px solid $facets-color;
+        }
+        /// End Full facets
+
+        /// If rounded facets
+        @if $rounded-facet{
+          .view-facet-btn-container{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+        /// End If rounded facets
+
+        /// Facets items
+        .desktop-facets{
+          padding-bottom: 25px;
+
+          /// If rounded facets
+          @if $rounded-facet{
+            /// Facet header
+            .caret-facet-category-header{
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+            }
+            /// End Facet header
+          }
+          @else{
+            /// Facet header
+            .caret-facet-category-header{
+              border-top-left-radius: 0px;
+              border-top-right-radius: 0px;
+            }
+            /// End Facet header
+          }
+          /// End If rounded facets
+
+          &:last-child{
+            /// If rounded facets
+            @if $rounded-facet{
+              /// Facet header
+              .caret-facet-category-header{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+              }
+              /// End Facet header
+            }
+            /// End If rounded facets
+          }
+
+          /// Full facets
+          @if $full-facet{
+            border-left: none;
+            border-right: none;
+          }
+          @else{
+            &:last-child{
+              padding-bottom: 0px;
+            }
+          }
+          /// End Full facets
+
+          /// Facet header
+          .caret-facet-category-header{
+            text-align: left;
+            padding: 10px 22px;
+
+            @include on-event{
+              background-color: $facets-color;
+            }
+
+            /// Full facets
+            @if $full-facet{
+              padding-left: 0px;
+            }
+            /// End Full facets
+          }
+          /// End Facet header
+
+          /// Facets items
+          .caret-facet-item-container{
+            margin: 0px;
+          }
+          /// End Facets items
+        }
+        /// End Facets items
+      }
+      /// End Facets body
+    }
+    /// End Facets container
+  }
+  /// End Facets container
+
+  /// END FACETS
+
+  /// Bottom pagination container
+  #jrp-bottom-desktop-pagination{
+    padding-top: 30px;
+  }
+  /// End Bottom pagination container
+
+  /// Table
+  #job-result-table, #recommendation-table{
+    /// Table header
+    .job-result-header{
+      min-width: 215px;
+
+      /// Multi brand
+      @if $multi-brand{
+        min-width: 160px;
+      }
+      /// End Multi brand
+    }
+    /// End Table header
+  }
+  /// End Table
+
+}
+
+
+@media (min-width: 1200px) {
+
+  /// Facet header & table header
+  #jrp-desktop-facet-col .caret-facet-category-header, #job-result-table .job-result-header, #recommendation-table .job-result-header{
+    &, a, span, .job-table-header-title, .job-table-header-location, .job-table-header-date-posted{
+      font-size: 20px;
+    }
+  }
+  /// End Facet header & table header
+
+  /// Table
+  #job-result-table, #recommendation-table{
+    /// Table header
+    .job-result-header{
+      min-width: 265px;
+
+      /// Multi brand
+      @if $multi-brand{
+        min-width: 200px;
+      }
+      /// End Multi brand
+    }
+    /// End Table header
+  }
+  /// End Table
+
+}

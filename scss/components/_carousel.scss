@@ -1,0 +1,177 @@
+/// -----------------------------------------------------------------------------
+/// This file contains all styles related to the carousel fading component.
+/// -----------------------------------------------------------------------------
+
+/// Carousel fade
+.carousel-fade{
+  .carousel-inner{
+    .item{
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+      // -webkit-transition-delay: 0.6s;
+      // transition-delay: 0.6s;
+    }
+
+    .item,
+    .active.left,
+    .active.right{
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right{
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right{
+      left: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+/// End Carousel fade
+
+/// Custom carousel
+.custom-carousel{
+  background-color: $body-color;
+
+  .indicators-container{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+    top: auto;
+    width: 100%;
+    margin: 0 auto;
+
+    .carousel-indicators{
+      /// Align indicators (Right and Left = 0 to Centrate)
+      left: 0px;
+      right: 0px;
+      /// End Align indicators (Right and Left = 0 to Centrate)
+
+      text-align: center;
+      width: auto;
+      margin: 0px 15px;
+      bottom: 0px;
+
+      li{
+        background-color: rgba($black, 0);
+        border: 1px solid $primary-color;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+
+        /// Space between indicators
+        margin: 0px 5px;
+
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        @include on-event{
+          background-color: rgba($primary-color, 0.5);
+        }
+      }
+
+      .active{
+        @include on-event(true){
+          background-color: $primary-color;
+          border: 1px solid $primary-color;
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  /// Align content vertically
+  .carousel-inner{
+    // padding-bottom: 60px;
+
+    >.item{
+      // min-height: 500px;
+      // height: 500px;
+    }
+
+    >.active, >.next, >.prev{
+      // display: table;
+      // width: 100%;
+
+      /// OR
+
+      // display: flex;
+      // -webkit-box-orient: horizontal;
+      // -webkit-box-direction: normal;
+      // -ms-flex-direction: row;
+      // flex-direction: row;
+      // -webkit-box-align: center;
+      // -ms-flex-align: center;
+      // align-items: center;
+      // -webkit-box-pack: center;
+      // -ms-flex-pack: center;
+      // justify-content: center;
+    }
+
+    .carousel-content{
+      // display: table-cell;
+      // vertical-align: middle;
+
+      /// OR
+
+      // display: flex;
+      // -webkit-box-orient: horizontal;
+      // -webkit-box-direction: normal;
+      // -ms-flex-direction: row;
+      // flex-direction: row;
+      // -webkit-box-align: center;
+      // -ms-flex-align: center;
+      // align-items: center;
+      // -webkit-box-pack: center;
+      // -ms-flex-pack: center;
+      // justify-content: center;
+    }
+  }
+  /// End Align content vertically
+
+}
+/// End Custom carousel
+
+@media (min-width: 768px) {
+
+  /// Custom carousel
+  .custom-carousel{
+    .indicators-container{
+      width: 750px;
+    }
+  }
+
+}
+
+
+@media (min-width: 992px) {
+
+  /// Custom carousel
+  .custom-carousel{
+    .indicators-container{
+      width: 970px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  /// Custom carousel
+  .custom-carousel{
+    .indicators-container{
+      width: 1170px;
+    }
+  }
+
+}

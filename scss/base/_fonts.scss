@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations.
+// -----------------------------------------------------------------------------
+
+/// 100 - Thin
+/// 200 - Extra Light, Ultra Light
+/// 300 - Light
+/// 400 - Normal, Book, Regular
+/// 500 - Medium
+/// 600 - Semi Bold, Demi Bold
+/// 700 - Bold
+/// 800 - Extra Bold, Ultra Bold
+/// 900 - Black, Heavy
+
+/// Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+/// Moserrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
+/// Font Awesome 4.7.0
+// @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/// Custom Font
+
+// @font-face {
+//   font-family: 'custom-font';
+//   src: url("../assets/fonts/custom_font_folder/custom_font_file.eot");
+//   src: url("../assets/fonts/custom_font_folder/custom_font_file.eot?#iefix") format("embedded-opentype"),
+//   url("../assets/fonts/custom_font_folder/custom_font_file.woff2") format("woff2"),
+//   url("../assets/fonts/custom_font_folder/custom_font_file.woff") format("woff"),
+//   url("../assets/fonts/custom_font_folder/custom_font_file.otf"),
+//   url("../assets/fonts/custom_font_folder/custom_font_file.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+/// End Custom Font

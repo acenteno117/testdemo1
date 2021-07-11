@@ -1,0 +1,509 @@
+/// -----------------------------------------------------------------------------
+/// This file contains all styles of search box and parent items
+/// -----------------------------------------------------------------------------
+
+/// Search Mobile
+.search-mobile{
+  background-color: $primary-color;
+
+  h2{
+    color: $white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /// Search box
+  .search-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /// Search box content
+    .search-box-content{
+    }
+    /// End Search box content
+  }
+  /// End Search box
+
+  /// Search bar
+  #search-bar{
+    max-width: 480px;
+    margin: 0 auto;
+
+    /// Search bar elements
+    .search-bar-element{
+      padding-bottom: 15px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding: 15px 0px;
+
+      input{
+        font-size: $body-font-size;
+        color: $fifth-color;
+        height: 40px;
+        border: none;
+        border-radius: 0px;
+        text-align: left;
+        // border-radius: 40px;
+        border-radius: 20px;
+        // font-family: Helvetica;
+        padding: 6px 18px;
+        position: relative;
+        z-index: 105;
+
+        @include placeholder{
+          color: rgba($fifth-color, 0.8);
+        }
+
+        /// Remove X icon from IE
+        &::-ms-clear{
+          display: none;
+        }
+      }
+
+      /// Search button container
+      &.search-widget-container{
+        /// Search button
+        .search-btn{
+          display: block;
+          // text-transform: none; /// <-- Override TN_JOB property
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 6.5px 15px;
+
+          @include on-event{
+            border-color: $secondary-color;
+          }
+        }
+        /// End Search button
+      }
+      /// Search button container
+    }
+    /// End Search bar elements
+  }
+  /// End Search bar
+
+  /// View all jobs container
+  .link-center{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+    /// View all jobs
+    .view-all-jobs{
+      color: $white;
+    }
+    /// End View all jobs
+  }
+  /// End View all jobs container
+}
+/// End Search Mobile
+
+///
+/// Extend Search
+///
+
+/// Search desktop home
+.search-desktop-home{
+  @extend .search-mobile;
+}
+/// End Search desktop home
+
+/// Search desktop
+.search-desktop{
+  @extend .search-desktop-home;
+  border-radius: 0px;
+}
+/// End Search desktop
+
+/// Search Widget (Search & Re-Engage)
+#search-widget{
+  @extend .search-mobile;
+  background-color: $secondary-color;
+
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  position: static;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+
+  #search-bar{
+    .search-bar-element{
+      &.search-widget-container{
+        .search-btn{
+
+          @include on-event{
+          }
+        }
+      }
+    }
+  }
+}
+/// End Search Widget (Search & Re-Engage)
+
+///
+/// End Extend Search
+///
+
+@media (min-width: 768px) {
+
+  /// This is a fix for element not using its full space
+  .search-mobile{
+    float: none;
+    padding: 0px;
+    background-size: cover;
+  }
+
+  /// Search desktop home
+  .search-desktop-home, #search-widget{
+    background-color: transparent;
+    // position: absolute;
+    // bottom: 20px;
+    // top: auto;
+    // right: 0px;
+    // left: 0px;
+
+    /// Location search bar element
+    .search-bar-element.search-field-container.search-location-field, .formly-field-googleAutocomplete{
+
+
+      /// Google locations suggestions dropdown
+      #suggestions, #suggestions-join-form{
+
+        top: 48px;
+
+      }
+    }
+
+    h2{
+      text-align: left;
+    }
+
+    /// Search box
+    .search-box{
+
+      padding: 45px 15px;
+      background-color: $primary-color;
+      border-radius: 20px;
+
+      /// Search box content
+      .search-box-content{
+        padding: 20px 0px;
+        // background-color: rgba(0,0,0,0.5);
+
+        /// For search small
+        @if $search-small{
+          // max-width: 480px;
+          margin: 0 auto;
+        }
+        /// End For search small
+      }
+      /// End Search box content
+    }
+    /// End Search box
+
+    /// Search bar
+    #search-bar{
+      max-width: none;
+      display: table;
+
+      /// For search small
+      @if $search-small{
+        display: block;
+      }
+      /// End For search small
+
+      /// Search bar elements
+      .search-bar-element{
+        padding: 0px;
+        padding-right: 15px;
+
+        display: table-cell;
+        vertical-align: bottom;
+        width: 50%;
+
+        /// For search small
+        @if $search-small{
+          padding-right: 0px;
+          padding-bottom: 30px;
+
+          display: block;
+          width: 100%;
+        }
+        /// End For search small
+
+        label{
+          color: $white;
+          font-weight: normal;
+          text-transform: capitalize;
+          padding-left: 20px;
+        }
+
+        input{
+          text-align: left;
+        }
+
+        /// Search button container
+        &.search-widget-container{
+          padding-right: 0px;
+
+          /// For search small
+          @if $search-small{
+            padding-bottom: 5px;
+          }
+          /// End For search small
+
+          /// Search button
+          .search-btn{
+            width: 100%;
+
+            @include on-event{
+            }
+
+            /// For search small
+            @if $search-small{
+              margin: 0 auto;
+            }
+            /// End For search small
+          }
+          /// End Search button
+        }
+        /// End Search button container
+      }
+      /// End Search bar elements
+    }
+    /// End Search bar
+
+    /// View all jobs container
+    .link-center{
+      padding-top: 15px;
+
+      /// View all jobs
+      .view-all-jobs{
+      }
+      /// End View all jobs
+    }
+    /// End View all jobs container
+  }
+  /// End Search desktop home
+
+
+
+
+  /// Search desktop & Search Widget (Search & Re-Engage)
+  .search-desktop, #search-widget{
+    background-color: $secondary-color;
+
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+
+
+    h2{
+      color: $white;
+      text-align: left;
+    }
+
+    /// Search box
+    .search-box{
+      padding: 0px 15px;
+      border-radius: 0px;
+
+      /// Search box content
+      .search-box-content{
+        // padding-right: 15px;
+        // padding-left: 15px;
+
+        /// For search small
+        @if $search-small{
+          max-width: none;
+        }
+        /// End For search small
+      }
+      /// End Search box content
+    }
+    /// End Search box
+
+    /// Search bar
+    #search-bar{
+      /// For search small
+      @if $search-small{
+        max-width: none;
+        display: table;
+      }
+      /// End For search small
+
+      /// Search bar elements
+      .search-bar-element{
+        /// For search small
+        @if $search-small{
+          padding: 0px;
+          padding-right: 30px;
+
+          display: table-cell;
+          vertical-align: bottom;
+          width: 50%;
+        }
+        /// End For search small
+
+        label{
+        }
+
+        input{
+        }
+
+        /// Search button container
+        &.search-widget-container{
+          /// For search small
+          @if $search-small{
+            padding-bottom: 0px;
+            padding-right: 0px;
+          }
+          /// End For search small
+
+          /// Search button
+          .search-btn{
+            // background-color: $btn-color;
+            // width: 300px;
+            width: 180px;
+
+            @include on-event{
+              // background-color: shade($btn-color, 15%);
+            }
+          }
+          /// End Search button
+        }
+        /// End Search button container
+      }
+      /// End Search bar elements
+    }
+    /// End Search bar
+
+    /// View all jobs container
+    .link-center{
+      /// View all jobs
+      .view-all-jobs{
+        color: $white;
+      }
+      /// End View all jobs
+    }
+    /// End View all jobs container
+  }
+  /// End Search desktop & Search Widget (Search & Re-Engage)
+
+  /// Search Widget (Search & Re-Engage)
+  #search-widget{
+    padding: 20px 15px 30px;
+
+    #search-bar{
+      max-width: 1140px;
+    }
+  }
+  /// End Search Widget (Search & Re-Engage)
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px) {
+
+  @if $label-inline{
+    /// Search desktop home
+    .search-desktop-home, #search-widget{
+      /// Search bar
+      #search-bar{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        /// Search bar elements
+        .search-bar-element{
+          padding-right: 30px;
+          width: 100%;
+
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+
+          /// Search button container
+          &.search-widget-container{
+            width: auto;
+
+            -webkit-box-flex: 0;
+            -ms-flex: none;
+            flex: none;
+          }
+          /// End Search button container
+
+          label{
+            width: 20%;
+            margin: 0px;
+            display: block;
+            padding-right: 5px;
+          }
+
+          input{
+            display: block;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+          }
+        }
+        /// End Search bar elements
+      }
+      /// End Search bar
+    }
+    /// End Search desktop home
+  }
+
+  .search-desktop{
+
+    .search-box{
+      .search-box-content{
+        padding: 20px 68px;
+      }
+    }
+
+    #search-bar{
+      .search-bar-element{
+        padding-right: 50px;
+
+        &.search-widget-container{
+          .search-btn{
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+
+}

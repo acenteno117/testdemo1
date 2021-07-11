@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Jobs at [Company]</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- Google maps and Dropbox JS Files -->
+
+  <!-- TN Job style -->
+  <link rel="stylesheet" type="text/css" href="public/bravo/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/tn_job.css">
+  <!-- Boostrap, jQuery and Fontawesome -->
+  <script type="text/javascript" src="public/premium/version/a53541aabaddbe004d77a2fa922c310d481f71a1/dist/premium.bundle.js"></script>
+  <!-- Premium custom styles CSS -->
+  <link id="custom-styles" rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body id="premium-body" class="">
+
+  <div id="job-details-page" ng-controller="DetailsController">
+    <!-- Internals section -->
+    <section class="internals-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+
+            <!-- Job details view -->
+            <div class="container jdp-breadcrumb-container">
+              <div id="jdp-breadcrumb-row" class="row">
+                <div class="hidden-xs col-sm-12">
+                  <ol class="breadcrumb">
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">[Company]</a></li>
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">All Jobs</a></li>
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">Santa Ana, CA</a></li>
+                    <li class="bread-crumb-item"><a href="#" class="bread-crumb-item-link">sales</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div id="jdp-title-container" class="jdp-title-container">
+              <div class="jdp-title-container-overlay">
+                <div class="container">
+                  <div class="row jdp-title-bar-row">
+                    <div class="col-sm-12">
+                      <div class="jdp-title-inner-container">
+                        <div class="jdp-title-block-position">
+                          <h1 id="jdp-title-job-title" class="jdp-job-title">
+                            <span class="jdp-title-job-title">Entry Level Sales Representative/Southern California</span>
+                            <span class="jdp-title-job-in">in</span>
+                            <span class="jdp-title-job-location">Santa Ana, CA</span>
+                            <span class="jdp-title-job-at">at</span>
+                            <span class="jdp-title-job-company">[Company]</span>
+                          </h1>
+
+                          <div id="jdp-title-date-posted" class="job-date-posted">
+                            <strong>Date Posted:</strong> 18/8/2017
+                          </div>
+                        </div>
+
+                        <div class="jdp-top-apply-block-position">
+                          <div id="jdp-apply-section-top" class="jdp-apply-section">
+                            <a id="jdp-apply-button-top" ng-click="registerApplyStartEvent($event)" ng-href="{{ applyURL }}"
+                            class="primary-button block-element">Apply</a>
+                            <a id="jdp-not-ready-to-apply-link-top" href="#" class="jdp-join-link">Not ready to Apply?</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="job-details-content">
+              <div class="container">
+                <div class="row">
+                  <!-- Right Column -->
+                  <div class="jdp-right-column col-md-4 col-md-push-8">
+                    <!-- Social Sharing -->
+                    <div id="jdp-social-sharing-section" class="hidden-sm hidden-xs">
+                      <div class="jdp-social-sharing-card content-card">
+                        <div class="social-sharing-title">
+                          Share With:
+                        </div>
+
+                        <div class="social-button-container">
+                          <span class="social-sharing-buttons addthis_toolbox addthis_32x32_style">
+                            <a class="addthis_button_facebook at300b" title="Facebook" href="#"><span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" title="Facebook" alt="Facebook" style="width: 32px; height: 32px;" class="at-icon at-icon-facebook"><title id="at-svg-facebook-1">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a>
+
+                            <a class="addthis_button_twitter at300b" title="Twitter" href="#"><span class="at-icon-wrapper" style="background-color: rgb(29, 161, 242); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" title="Twitter" alt="Twitter" style="width: 32px; height: 32px;" class="at-icon at-icon-twitter"><title id="at-svg-twitter-2">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a>
+
+                            <a class="addthis_button_linkedin at300b" target="_blank" title="LinkedIn" href="#"><span class="at-icon-wrapper" style="background-color: rgb(0, 119, 181); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-linkedin-3" title="LinkedIn" alt="LinkedIn" style="width: 32px; height: 32px;" class="at-icon at-icon-linkedin"><title id="at-svg-linkedin-3">LinkedIn</title><g><path d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z" fill-rule="evenodd"></path></g></svg></span></a>
+
+                            <a class="addthis_button_google_plusone_share"></a>
+
+                            <a class="addthis_button_email at300b" target="_blank" title="Email" href="#"><span class="at-icon-wrapper" style="background-color: rgb(132, 132, 132); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-email-4" title="Email" alt="Email" style="width: 32px; height: 32px;" class="at-icon at-icon-email"><title id="at-svg-email-4">Email</title><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a>
+
+                            <div class="atclear"></div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Social Sharing -->
+
+                    <!-- Snapshot-->
+                    <div id="jdp-job-snapshot-section">
+                      <div class="jdp-job-snapshot-card content-card">
+                        <h2 class="content-card-header">Job Snapshot</h2>
+                        <ul class="snapshot-padding">
+                          <!-- Employee Type-->
+                          <li class="job-employee-type">
+                            <span class="glyphicon glyphicon-hourglass snapshot-icon secondary-text-color"></span>
+
+                            <div class="snapshot-text">
+                              <strong>Employee Type:</strong><br/>
+
+                              <div class="secondary-text-color">Full-Time</div>
+                            </div>
+                          </li>
+
+                          <!-- Location -->
+                          <li class="job-location">
+                            <i class="glyphicon glyphicon-map-marker snapshot-icon secondary-text-color"></i>
+
+                            <div class="snapshot-text">
+                              <strong>Location:</strong><br>
+
+                              <div class="secondary-text-color">14225 Dearborn Street</div>
+                              <a class="secondary-text-color job-snapshot-link" href="#">
+                                <span class="jobLocation">KS-Overland Park-Nicklaus Golf Club Lionsgate</span>
+                              </a>
+                            </div>
+                          </li>
+
+                          <!-- Job Type -->
+                          <li class="job-categories">
+                            <span class="glyphicon glyphicon-triangle-top snapshot-icon secondary-text-color"></span>
+
+                            <div class="snapshot-text">
+                              <strong>Job Type:</strong><br/>
+
+                              <a class="secondary-text-color job-snapshot-link" href="#">sales</a>
+                            </div>
+                          </li>
+
+                          <!-- Experience -->
+                          <li class="job-experience">
+                            <i class="fa fa-briefcase snapshot-icon secondary-text-color"></i>
+
+                            <div class="snapshot-text">
+                              <strong>Experience:</strong><br/>
+
+                              <div class="secondary-text-color">Not Specified</div>
+                            </div>
+                          </li>
+
+                          <!-- Date Posted -->
+                          <li class="job-date-posted">
+                            <i class="fa fa-clock-o snapshot-icon secondary-text-color"></i>
+
+                            <div class="snapshot-text">
+                              <strong>Date Posted:</strong><br/>
+
+                              <div class="secondary-text-color">18/8/2017</div>
+                            </div>
+                          </li>
+
+                          <!-- Job ID -->
+
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- JDP Media Section-->
+                    <div id="jdp-media-content-section" class="hidden-sm hidden-xs">
+                    </div>
+
+                    <!-- About Us -->
+                    <div id="jdp-about-us-section" class="hidden-sm hidden-xs">
+                      <div ^dis_jdp_about_us^ class="jdp-about-us-card content-card">
+                        <div class="multi-brand-image text-center">
+                          <img src="https://secure.icbdr.com/MediaManagement/T9/MJ00T56G21MQWGBDCT9.jpg" alt-="KaVoKerr">
+                        </div>
+
+                        <h2 class="content-card-header">About Us</h2>
+
+                        <div class="client-content-blob"><p align="justify">KaVo Kerr is a cohesive organization comprised of two global leaders, united to provide dental excellence and serve as a single premier partner for the dental community.<br><br>For more than 100 years, KaVo has focused on innovation and quality in dental products and services, building an outstanding reputation among dentists, dental technicians and dental hygienists. KaVo offers a comprehensive product portfolio that includes imaging, treatment units, instrumentation, laboratory equipment and educational aids. In product development, service and support, customers around the world see and experience KaVo’s ongoing commitment to Dental Excellence.</p></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Left Column -->
+                  <div class="jdp-left-column col-md-8 col-md-pull-4">
+                    <!-- Job Description -->
+                    <div id="jdp-job-description-section">
+                      <div class="jdp-job-description-card content-card">
+                        <h2 class="content-card-header">Job Description</h2>
+                        <b>Job ID: ORM000891</b><br /> <br /><br /><b> About Us </b><br /><br /> <p></p> <br /><br /><b> Description </b><br /><br /> MAJOR RESPONSIBILITIES<br />This is a home based, professional field sales opportunity, located in or near a major metropolitan area. The primary responsibilities of this position include selling orthodontic products and custom lab services to General Dentists, Pediatric Dentists, and other related non-orthodontic dental specialties, by building strong relationships in these segments. Additional responsibilities include growing and managing a defined sales territory to achieve revenue targets, providing technical support and service within the defined territory, conducting in-office demonstrations, and promoting and attending CE events and tradeshows. Expectations are to sell orthodontic products and lab services during field sales calls and by phone, to existing customers and new prospects with the intention of selling in new products, increasing utilization and upgrading existing business to premium products.<br /><br />This role will involve sole territory coverage, account management, telesales, lead generation, team selling, and office visits to new and existing customers.<br /><br />In addition, you will be involved with various projects that support your sales efforts, including<br />
+                        <ul>
+                          <li>Developing target lists and maintaining a CRM database.</li>
+                          <li>Retaining and growing existing business, and generating new business opportunities. </li>
+                          <li>Providing technical support and first class customer service to new and existing customers.</li>
+                          <li>Developing and implementing marketing strategies to capitalize on trends within the defined territory through email, direct mail, and phone campaigns.</li>
+                          <li>Conducting training for dentists and their staff via webinar and in-office visits.</li>
+                          <li>Attending and presenting at CE seminars, trade shows and various sales meetings.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Job Requirements -->
+                    <div id="jdp-job-requirements-section">
+                      <div class="jdp-job-requirements-card content-card">
+                        <h2 class="content-card-header">Job Requirements</h2>
+
+                        EDUCATION / EXPERIENCE<br />Qualified candidates are required to possess a BA or BS degree (Science, or Business related degrees preferred), 1-3 years’ previous sales or marketing experience or 1-2 years working from home with a proven record of success in a quota driven environment. In addition, the ability to promote, sell, educate and present a diverse and technical product line are essential factors for success.<br /><br />SKILLS / ABILITIES<br />Candidate must be a driven self-starter with a solid work ethic, excellent verbal and written communication skills, quick to build rapport, able to establish long lasting customer relationships in person and over the phone, and willing to cover a large geographical territory. Strong planning, organization, presentation, problem solving, and time management skills are also required. Proficiency in Microsoft Office (Excel focus), Adobe Acrobat XI Pro, Adobe Illustrator, Photoshop, and experience with Microsoft Dynamics or other CRM program are preferred. <br /><br />SPECIAL QUALIFICATIONS<br />Candidate must be able to work from home unsupervised, have reliable transportation or access to local transportation as needed to service key customers, have access to high speed internet and phone service. Candidate must also be open to travel to dental conferences, trade shows, regional sales meetings, training events and annual corporate meetings.<br /><br />Kavo Kerr is an equal opportunity employer. We evaluate qualified applicants without regard to race, color, national origin, religion, gender, age, marital status, disability, veteran status, sexual orientation, gender identity, or any other characteristic protected by law. We maintain a drug-free workplace and perform pre-employment substance abuse testing.<br /><br />#LI-IW1<br /> <br /><br /><b> Danaher Corporation Overview </b><br /><br /> Danaher is a global science & technology innovator committed to helping our customers solve complex challenges and improve quality of life worldwide. Our world class brands are leaders in some of the most demanding and attractive industries, including life sciences, medical diagnostics, dental, environmental and industrial solutions. Our globally diverse team of 59,000 associates is united by a common culture and operating system, the Danaher Business System, which serves as our competitive advantage. We generated $16.5B in revenue last year. We are ranked #133 on the Fortune 500 and our stock has outperformed the S&P 500 by more than 2,000% over 20 years.<br /><br />At Danaher, you can build a career in a way no other company can duplicate. Our brands allow us to offer dynamic careers across multiple industries. We’re innovative, fast-paced, results-oriented, and we win. We need talented people to keep winning. Here you’ll learn how DBS is used to shape strategy, focus execution, align our people, and create value for customers and shareholders. Come join our winning team.<br /><br />
+                      </div>
+                    </div>
+
+                    <!-- Desktop Apply Now Section-->
+                    <div id="jdp-bottom-apply-section">
+                      <div class="jdp-bottom-apply-card content-card">
+                        <div class="row">
+                          <div id="jdp-bottom-apply-company-logo-col" class="col-sm-3">
+                            <div class="multi-brand-image text-center">
+                              <img src="https://secure.icbdr.com/MediaManagement/T9/MJ00T56G21MQWGBDCT9.jpg" alt-="KaVoKerr">
+                            </div>
+
+                          </div>
+
+                          <div class="col-sm-3 col-md-5"></div>
+
+                          <div id="jdp-bottom-apply-button-col" class="col-sm-6 col-md-4">
+                            <div id="jdp-apply-section-bottom" class="jdp-apply-section">
+                              <a id="jdp-apply-button-bottom" ng-click="registerApplyStartEvent($event)" ng-href="{{ applyURL }}"
+                              class="primary-button block-element">Apply</a>
+                              <a id="jdp-not-ready-to-apply-link-bottom" href="#" class="jdp-join-link">Not ready to Apply?</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="jdp-similar-jobs-row" class="row similar-jobs-container" >
+                  <div class="col-sm-12">
+                    <h3><b>CHECK OUT OUR SIMILAR JOBS</b></h3>
+
+                    <ol class="similar-jobs">
+                      <li class="similar-job-element"><a href="#" class="similar-jobs-tag">Sales Jobs</a></li>
+                      <li class="similar-job-element"><a href="#" class="similar-jobs-tag">Sales Rep Jobs</a></li>
+                      <li class="similar-job-element"><a href="#" class="similar-jobs-tag">Jobs in Orange, California</a></li>
+                      <li class="similar-job-element"><a href="#" class="similar-jobs-tag">Sales Jobs Orange, California</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Internals section -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Replace CMS media flag -->
+  <script src="js/replaceMedia.js" charset="utf-8"></script>
+  <!-- End Replace CMS media flag -->
+</body>
+</html>

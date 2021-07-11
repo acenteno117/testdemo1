@@ -1,0 +1,230 @@
+<!-- Author: Alvaro Centeno, Date and hours: [DD]/[MM]/[AA], [hh]:[mm] P.M. -->
+
+
+
+<!-- ******************** START CoWorx Staffing Services ******************** -->
+
+
+<!-- ---------------------------------------- START TICKET INFO ---------------------------------------- -->
+
+Email by:
+Ticket #: 2150102
+AccDID: A7F6CL5ZGZ2GFDJ8F5G
+TNDID:
+Invision link:
+https://projects.invisionapp.com/share/ECT5VTHAMW6#/screens/375812380_Home
+
+Template: Premium
+Costumer name: CoWorx Staffing Services
+
+Preview link: https://coworx-jobs-cms-preprod.cbtalentnetwork.com/
+
+==================================
+Description:
+
+TN DID: TN7L2ZJ6BJKLQCJZP6QY
+Link to PSD Files: https://basecamp.com/1783092/projects/16610191
+Special Instructions/Notes: Please create the pre-prod link using this Invision link: https://projects.invisionapp.com/share/ECT5VTHAMW6#/screens/375812380_Home
+
+
+<!-- ---------------------------------------- END TICKET INFO ---------------------------------------- -->
+
+
+
+<!-- ---------------------------------------- START UPDATES ---------------------------------------- -->
+
+Display name:
+[site-name]
+
+Hostname:
+-cms-preprod.cbtalentnetwork.com
+
+Site Meta Description:
+Get job alerts, search or apply to open positions at [site-name] Career Site.
+
+Homepage Meta Title:
+Jobs and Careers at [site-name]
+
+Default Page Name:
+[site-name] Careers
+
+Favicon:
+^media_src_favicon.png^
+
+Meta Image Media Name:
+^media_src_site-logo-meta.png^
+
+
+#### GOOGLE DRIVE AND DROPBOX ####
+
+Google Drive (https://xxx-cms-preprod.cbtalentnetwork.com [without / at the end]):
+https://xxx-cms-preprod.cbtalentnetwork.com
+
+Google Browser Key (*.xxx-cms-preprod.cbtalentnetwork.com/* [add /* at the end]):
+*.xxx-cms-preprod.cbtalentnetwork.com/*
+
+Dropbox (https://xxx-cms-preprod.cbtalentnetwork.com [without https:// at the begin]):
+xxx-cms-preprod.cbtalentnetwork.com
+
+<!-- ---------------------------------------- END UPDATES ---------------------------------------- -->
+
+
+
+================================== START BACKUPS ===========================================
+
+Site Specific CSS Content: backup/css/specific-content.css
+
+
+================================== END BACKUPS ==============================================
+
+
+
+<!-- ---------------------------------------- START EMAIL SUBMITTER ---------------------------------------- -->
+
+Premium QA Ticket
+
+New/ Browse/ GPS Fulfillment:
+
+Title: Premium TSE QA - CoWorx Staffing Services
+Number of Items:
+Request Type: Premium TSE QA
+Task Type: New Build
+AccountDID: A7F6CL5ZGZ2GFDJ8F5G
+Company Name: CoWorx Staffing Services
+Preview link: https://coworx-jobs-cms-preprod.cbtalentnetwork.com/
+
+***************************************************
+DESCRIPTION:
+
+Ticket #: 2150102
+Worked by: Alvaro Centeno
+URL: https://coworx-jobs-cms-preprod.cbtalentnetwork.com/
+Invision link: https://projects.invisionapp.com/share/ECT5VTHAMW6#/screens/375812380_Home
+
+### Notes ###
+
+#### Original ticket description ####
+
+Description:
+
+TN DID: TN7L2ZJ6BJKLQCJZP6QY
+Link to PSD Files: https://basecamp.com/1783092/projects/16610191
+Special Instructions/Notes: Please create the pre-prod link using this Invision link: https://projects.invisionapp.com/share/ECT5VTHAMW6#/screens/375812380_Home
+
+
+====================================================
+Close request
+**************
+
+Hi,
+
+The build is ready.
+
+Preview link to the premium site:
+https://coworx-jobs-cms-preprod.cbtalentnetwork.com/
+
+Please find QA form attached at:
+
+If you have any question, please let me know.
+
+Regards,
+
+Alvaro Centeno
+Global Partner Support Team
+
+************************************************
+Company Name: CoWorx Staffing Services
+Name of Build: Premium Build - CoWorx Staffing Services
+Preview Link: https://coworx-jobs-cms-preprod.cbtalentnetwork.com/
+************************************************
+
+<!-- ---------------------------------------- END EMAIL SUBMITTER ---------------------------------------- -->
+
+
+TEST TNDID: TNSQ7HX69YDKJ6FCP007
+
+====================================================
+QA Calendar
+************
+
+Subject: New build to add in the QA calendar
+--------------------------------------------
+
+Hi Team,
+
+CoWorx Staffing Services
+New Build - Ticket #2150102
+X Content Pages + X Featured Pages
+
+SLA: xx/xx/xx- EOD
+I'll finish this: xx/xx/xx - EOD
+
+Invision link: https://projects.invisionapp.com/share/ECT5VTHAMW6#/screens/375812380_Home
+
+Regards,
+
+====================================================
+QA Feedback
+************
+
+Subject: CoWorx Staffing Services Feedback
+---------------------------
+
+
+Hi team,
+
+The QA feedback updates are ready.
+
+Please see attached QA feedback.
+
+https://coworx-jobs-cms-preprod.cbtalentnetwork.com/
+
+Regards,
+
+
+====================================================
+SLA update
+******************
+
+Hi,
+
+This is regarding the CoWorx Staffing Services ticket.
+
+- The correct SLA including the X content pages and the X featured pages is going to be on November 9th. If there are any questions/comments please do not hesitate to let me know.
+
+Regards,
+
+Alvaro Centeno
+Global Partner Support
+
+<!-- ******************** END CoWorx Staffing Services ******************** -->
+
+====================================================
+Premium URL Internals:
+**********************
+
+/search
+/jobsamplepage
+/join
+/browse-by-location
+/ApplyFinish/J3J30C6XBH6S8K4VXDF
+/editpreference/TMTY125789FFX7GJ8Z2H
+/unsubscribe/TMTY125789FFX7GJ8Z2H
+/wrongurl
+/privacy-policy
+/terms-and-conditions
+
+/search-widget
+
+====================================================
+Email to submitter
+******************
+
+Hi,
+
+This is regarding the CoWorx Staffing Services ticket.
+
+Regards,
+
+Alvaro Centeno
+Global Partner Support Team
